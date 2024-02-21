@@ -1,0 +1,62 @@
+`timescale 1ns/10ps
+
+`include "uart_tx.sv"
+
+module uart_tb();
+
+  parameter c_CLOCK_PERIOD_NS = 40;
+  parameter c_CLKS_PER_BIT = 217;
+  parameter c_BIT_PERIOD = 8600;
+  
+  reg r_clock = 0;
+  reg r_TX_DV = 0;
+  wire w_TX_active, w_UART_line;
+  wire w_TX_serial;
+  reg [7:0] r_TX_byte = 0;
+  wire [7:0] w_RX_byte;
+
+  uart_rx #(.clks_per_bit(c_CLKS_PER_BIT)) uart_rx_inst
+  (.i_clock(r_clock),
+   .i_RX_serial(w_UART_line),
+     .o_RX_DV(w_RX_DV),
+   .o_RX_byte(w_RX_byte)
+     );
+  
+  uart_tx #(.clks_per_bit(c_CLKS_PER_BIT)) uart_tx_ins
+  (.i_clock(r_clock),
+     .i_TX_DV(r_TX_DV),
+   .i_TX_byte(r_TX_byte),
+   .o_TX_active(w_TX_active),
+   .o_TX_serial(w_TX_serial),
+     .o_TX_done()
+     );
+  assign w_UART_line = w_TX_active ? w_TX_serial : 1'b1;
+    
+  always
+    #(c_CLOCK_PERIOD_NS/2) r_clock <= !r_clock;
+  
+ initial
+    begin
+      @(posedge r_clock);
+      @(posedge r_clock);
+      r_TX_DV   <= 1'b1;
+      r_TX_byte <= 8'hAD;
+      @(posedge r_clock);
+      r_TX_DV <= 1'b0;
+      $display("transmitting data : %b",r_TX_byte);
+
+      @(posedge w_RX_DV);
+      if (w_RX_byte == r_TX_byte) 
+        begin
+          $display("received data   : %b",w_RX_byte);
+          $display("Test Passed - Correct Byte Received");
+        end
+      else
+          $display("Test Failed - Incorrect Byte Received");
+          $finish();
+    end
+  
+  initial begin
+    $dumpfile("dump.vcd"); $dumpvars(0);
+  end
+endmodule
