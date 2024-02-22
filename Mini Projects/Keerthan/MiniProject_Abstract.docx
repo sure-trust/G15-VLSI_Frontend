@@ -1,0 +1,10 @@
+Titlel: “Password Protected RAM and ROM Files”
+Abstract
+This project  implements a secure access mechanism with password protection for both RAM and ROM files.The module employs a FSM to check for passwords and then allows RAM  and ROM editing.Reading of files can be done without needing for password. Passwords are differentiated based on the most significant bit (MSB), acting as a selector for either RAM or ROM access. The test bench evaluates various cases like including correct and incorrect passwords for RAM and ROM, as well as cases where both passwords are correct or incorrect. Each case has simulation of password-protected write operations, validating the security features of the module.
+Expected Outcomes 
+•	Set different passwords for RAM and ROM files.
+•	Restrict unauthorized editing of RAM and ROM files.
+•	Reading of RAM and ROM files will be accessible to everyone.
+Applications
+•	Increasing security of the Programmable Logic Devices (PLC).
+•	Reduces unwanted interference of RAM and ROM files in memory by unauthorized third party.
