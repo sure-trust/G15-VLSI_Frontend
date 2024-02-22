@@ -1,0 +1,9 @@
+Verilog Based UART with Finite State Machine (FSM) Implementation
+
+ABSRACT 
+The Verilog-based UART (Universal Asynchronous Receiver and Transmitter)  implementation with Finite State Machine (FSM) is designed to provide a simple and reliable UART communication system. The project includes both transmitter and receiver modules, featuring one start bit, one stop bit and 8 data bits. The implementation uses a Finite State Machine to control the timing and sequencing of the UART bits, ensuring proper data transmission and reception. The module is configured for a specific baud rate, data bits and start/stop bits. The project aims to implement a reliable and efficient UART transmitter for digital communication applications.
+
+OUTCOMES
+The outcome of this project is a functional verilog module that serves as a UART transmitter and receiver with FSM implementation. The module generates a serial bitstream with the specified data bits, start and stop bits. It operates based on a defined baud rate, ensuring proper synchronization with the receiving end. The FSM controls the state transitions, facilitating the generation of start and stop bits and managing the transmission of data bits. The design provides a foundation for building more complex communication systems and can be integrated into larger digital systems for data transmission over serial interfaces. The module's parameters, such as baud rate, data bits, and stop bits, can be customized to meet specific project requirements.
+UART is widely used in embedded systems, wireless communication modules, GPS devices, industrial automation, medical devices, automotive electronics, smart home devices, and point-of-sale systems for reliable and versatile serial communication.
+
