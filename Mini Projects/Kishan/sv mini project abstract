@@ -1,0 +1,18 @@
+TITLE: DESIGN AND VERIFICATION OF EVEN PARITY BIT GENERATOR
+
+ABSTRACT
+This SystemVerilog project involves the design and verification of an Even Parity Bit Generator module, an essential component in data communication systems.
+The module takes a 7-bit binary input and produces an additional parity bit to enforce even parity, a common error-checking technique. The significance of 
+even parity lies in its ability to detect single-bit errors in transmitted data. As data integrity is crucial in many applications, especially in environments 
+susceptible to noise and interference, the Even Parity Bit Generator project aims to contribute a reliable solution.To test the functionality of the Even Parity
+Bit Generator, a testbench is created using systemverilog HDL. This testbench evaluates the module's performance by providing different 7-bit data inputs 
+and verifying that the generated parity bit conforms to the expected even parity. Through systematic testing, the project not only aims to validate the 
+proper implementation of the module but also to showcase the broader applicability of even parity as a fundamental error-checking mechanism in digital 
+communication systems. This project serves as an educational and practical exploration of hardware design and verification principles using the SystemVerilog 
+language.
+
+EXPECTED OUTCOMES
+1.	SystemVerilog Proficiency: Participants gain proficiency in SystemVerilog, a hardware description and verification language widely used in digital design 
+  projects.
+2.	Verification Practices: The project emphasizes robust verification practices, providing hands-on experience in creating systematic testbenches to validate 
+  hardware functionality.
