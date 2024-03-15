@@ -1,0 +1,28 @@
+class monitor;
+  transaction tx;
+  mailbox mon2scb;
+  
+  virtual intf vif;
+  
+  function new(mailbox mon2scb,virtual intf vif);
+    this.mon2scb=mon2scb;
+    this.vif=vif;
+  endfunction
+  
+  
+  task run();
+    tx=new();
+    
+    repeat(10)begin
+      #1;
+      tx.in=vif.in;
+      tx.out=vif.out;
+      
+      #1;
+      
+      //tx.display("COLLECTED IN MONITOR");
+      mon2scb.put(tx);
+    end
+  endtask
+  
+endclass

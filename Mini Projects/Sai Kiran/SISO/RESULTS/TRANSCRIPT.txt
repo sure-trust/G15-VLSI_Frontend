@@ -1,0 +1,97 @@
+------GENERATOR------
+in=0,out=0
+------GENERATOR------
+in=1,out=0
+------GENERATOR------
+in=0,out=0
+------GENERATOR------
+in=1,out=0
+------GENERATOR------
+in=1,out=0
+------GENERATOR------
+in=1,out=0
+------GENERATOR------
+in=1,out=0
+------GENERATOR------
+in=0,out=0
+------GENERATOR------
+in=1,out=0
+------GENERATOR------
+in=1,out=0
+------scb------
+in=0,out=0
+---test pass---
+------actual------
+in=0,out=0
+------expected------
+in=0,out=0
+------scb------
+in=0,out=0
+---test pass---
+------actual------
+in=0,out=0
+------expected------
+in=0,out=0
+------scb------
+in=0,out=0
+---test pass---
+------actual------
+in=0,out=0
+------expected------
+in=0,out=0
+------scb------
+in=0,out=0
+---test pass---
+------actual------
+in=0,out=0
+------expected------
+in=0,out=0
+------scb------
+in=0,out=0
+---test pass---
+------actual------
+in=0,out=0
+------expected------
+in=0,out=0
+------scb------
+in=0,out=0
+---test pass---
+------actual------
+in=0,out=0
+------expected------
+in=0,out=0
+------scb------
+in=0,out=0
+---test pass---
+------actual------
+in=0,out=0
+------expected------
+in=0,out=0
+------scb------
+in=0,out=0
+---test pass---
+------actual------
+in=0,out=0
+------expected------
+in=0,out=0
+------scb------
+in=1,out=0
+---test pass---
+------actual------
+in=1,out=0
+------expected------
+in=1,out=0
+------scb------
+in=1,out=0
+---test pass---
+------actual------
+in=1,out=0
+------expected------
+in=1,out=0
+$finish called from file "testbench.sv", line 19.
+$finish at simulation time                  250
+           V C S   S i m u l a t i o n   R e p o r t 
+Time: 250 ns
+CPU Time:      0.640 seconds;       Data structure size:   0.0Mb
+Fri Mar 15 09:29:25 2024
+Done

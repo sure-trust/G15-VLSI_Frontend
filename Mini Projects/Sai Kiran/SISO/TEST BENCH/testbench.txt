@@ -1,0 +1,31 @@
+`include "interface.sv"
+`include "transaction.sv"
+`include "generator.sv"
+`include "driver.sv"
+`include "monitor.sv"
+`include "scoreboard.sv"
+`include "environment.sv"
+
+module top;
+  environment env;
+  bit clk, rst;
+  always #5 clk=~clk;
+  initial begin
+    rst=1;
+    repeat (10)@(negedge clk);
+    rst=0;
+    #150 $finish;
+  end
+
+  intf pif(clk,rst);
+
+  siso dut (.clk(pif.clk), .rst(pif.rst),.in(pif.in),.out (pif.out));
+  initial begin
+    env=new(pif);
+    env.run();
+  end
+  initial begin
+    $dumpfile("dump.vcd");
+    $dumpvars;
+  end
+endmodule

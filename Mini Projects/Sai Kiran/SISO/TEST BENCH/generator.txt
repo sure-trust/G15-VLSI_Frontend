@@ -1,0 +1,21 @@
+class generator;
+  transaction tx;
+  mailbox gen2drv;
+  
+  
+  function new(mailbox gen2drv);
+    this.gen2drv=gen2drv;
+  endfunction
+  
+  task run();
+    repeat(10)
+      begin
+        tx=new();
+        tx.randomize();
+        gen2drv.put(tx);
+        tx.display("GENERATOR");
+        
+      end 
+  endtask
+  
+endclass
