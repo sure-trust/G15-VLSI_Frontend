@@ -1,0 +1,36 @@
+class scoreboard;
+  transaction tx,tx_ref;
+  mailbox mbx;
+  
+  function new(mailbox mon2scb);
+    mbx=mon2scb;
+  endfunction
+  
+  task run();
+    forever begin
+      mbx.get(tx);
+      tx.display("scb");
+      tx_ref=new();
+      tx_ref.in=tx.in;
+      
+      
+      if (tx.out==tx_ref.out)
+        begin
+          $display("---test pass---");
+          tx.display("actual");
+          tx_ref.display("expected");
+        end
+      else 
+        begin
+          $display("---test fail---");
+          tx.display("actual");
+          tx_ref.display("expected");
+        end
+    end
+  endtask
+endclass
+
+
+      
+  
+  

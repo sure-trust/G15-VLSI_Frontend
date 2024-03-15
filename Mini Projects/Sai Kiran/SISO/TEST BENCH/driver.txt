@@ -1,0 +1,26 @@
+class driver;
+  transaction tx;
+  mailbox gen2drv;
+  
+  
+  virtual intf vif;
+  
+  function new(mailbox gen2drv,virtual intf vif);
+    this.gen2drv=gen2drv;
+    this.vif=vif;
+  endfunction
+  
+  
+  task run();
+    forever begin
+      gen2drv.get(tx);
+      @(posedge vif.clk);
+      vif.in=tx.in;
+      
+      #1;
+      
+      //tx.display("DRIVER WITH OUTPUT");
+    end
+  endtask
+  
+endclass

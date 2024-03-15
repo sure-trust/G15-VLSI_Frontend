@@ -1,0 +1,11 @@
+class transaction;
+  rand bit in;
+  bit out;
+  
+  function void display(string name);
+    $display("------%s------",name);
+    $display("in=%0d,out=%0d",in,out);
+  endfunction
+  
+endclass
+    

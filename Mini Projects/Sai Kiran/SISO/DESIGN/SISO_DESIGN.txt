@@ -1,0 +1,18 @@
+module siso # (parameter N=4)(clk,rst,in,out);
+  
+  input clk,rst,in;
+  output reg out;
+  reg [N-1:0]temp;
+  always@(posedge clk,posedge rst)
+    begin
+      if (rst==1)
+        temp<=0;
+      else
+        begin
+          temp<=temp>>1;
+          temp[N-1]<=in;
+        end
+    end
+  assign out=temp[0];
+  
+  endmodule
