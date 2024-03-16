@@ -1,0 +1,15 @@
+module EvenParityGenerator (
+  input wire clk,
+  input wire [6:0] data_in,
+  output reg parity_out
+);
+
+reg [6:0] data_in_reg;
+
+always @(posedge clk) begin
+  data_in_reg <= data_in;
+  
+  parity_out <= (data_in_reg[6] ^ data_in_reg[5] ^ data_in_reg[4] ^ data_in_reg[3] ^ data_in_reg[2] ^ data_in_reg[1] ^ data_in_reg[0]);
+end
+  
+endmodule
