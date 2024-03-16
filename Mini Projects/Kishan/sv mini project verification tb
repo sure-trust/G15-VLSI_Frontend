@@ -1,0 +1,213 @@
+//testbench.sv
+`include "transaction.sv"
+`include "generator.sv"
+`include "driver.sv"
+`include "interface.sv"
+`include "monitor.sv"
+`include "scoreboard.sv"
+`include "environment.sv"
+`include "test.sv"
+
+module top();
+  bit clk;
+  test tb;
+  intf pif(clk);
+  
+  EvenParityGenerator dut(.clk(pif.clk),
+          .data_in(pif.data_in),
+          .parity_out(pif.parity_out));
+  
+  always #1 clk=~clk;
+
+  initial begin
+    $display("display from top");
+    tb=new(pif);
+    tb.main();
+  end
+  initial begin
+    $dumpfile("dum.vcd"); 
+    $dumpvars();
+    #50 $finish();
+  end
+endmodule
+
+//test.sv
+class test;
+  environment env_h; 
+  virtual intf vif;
+  
+  function new(virtual intf vif);  
+    this.vif=vif;
+    env_h = new(vif);  
+  endfunction
+  
+  task main();
+    $display("display from test");
+    env_h.main();
+  endtask
+endclass
+
+//environment.sv
+class environment;
+  mailbox gen2driv;
+  mailbox mon2sco;
+  
+  generator gen_h;
+  driver driv_h;
+  monitor mon_h;
+  scoreboard sco_h;
+  
+  virtual intf vif;
+  
+  function new(virtual intf vif);
+    this.vif=vif;
+    gen2driv=new();
+    mon2sco=new();
+    gen_h=new(gen2driv);
+    driv_h=new(gen2driv,vif);
+    mon_h=new(mon2sco,vif);
+    sco_h=new(mon2sco);
+  endfunction
+  
+  task main();
+    $display("display from environment");
+    fork
+      gen_h.put_msg();
+      driv_h.get_msg();
+      mon_h.put_msg();
+      sco_h.get_msg();
+    join
+  endtask
+endclass
+    
+//transaction.sv
+class transaction;
+  rand bit [6:0] data_in;
+  bit parity_out;
+
+  function void display(string name);
+    $display("display from %s ",name);
+    $display("data_in=%b parity_out=%b ",data_in,parity_out);
+  endfunction
+endclass
+  
+//generator.sv
+class generator;
+  mailbox gen2driv;
+  transaction trans;
+  
+  function new(mailbox gen2driv);
+    this.gen2driv=gen2driv;
+  endfunction
+  
+  task put_msg;
+    repeat(10) begin
+      trans=new();
+      trans.randomize() with {data_in inside {[7'b0000000:7'b1111111]};};
+      trans.display("generator");
+      gen2driv.put(trans);
+    end
+  endtask
+endclass
+
+//driver.sv
+class driver;
+  mailbox gen2driv;
+  transaction trans;
+  virtual intf vif;
+  
+  function new(mailbox gen2driv,virtual intf vif);
+    this.gen2driv=gen2driv;
+    this.vif=vif;
+  endfunction
+  
+  task get_msg;
+    forever begin
+      @(vif.driv_cb); 
+      gen2driv.get(trans);
+      vif.data_in=trans.data_in;
+      trans.display("driver");
+      @(vif.driv_cb);
+    end
+  endtask
+endclass
+    
+//interface.sv
+interface intf(input clk);
+  logic [6:0] data_in;
+  logic parity_out;
+  
+  clocking driv_cb @(posedge clk);
+    output data_in;
+    input parity_out;
+  endclocking
+  
+  clocking mon_cb @(posedge clk);
+    input data_in;
+    input parity_out;
+  endclocking
+endinterface
+
+//monitor.sv
+class monitor;
+  mailbox mon2sco;
+  transaction trans;
+  virtual intf vif;
+  
+  function new(mailbox mon2sco,virtual intf vif);
+    this.mon2sco=mon2sco;
+    this.vif=vif;
+  endfunction
+  
+  task put_msg;
+    forever begin
+      @(vif.mon_cb);
+      @(vif.mon_cb);
+      trans=new();
+      trans.data_in=vif.data_in;
+      trans.parity_out=vif.parity_out;
+      mon2sco.put(trans);
+      trans.display("monitor");
+      @(vif.mon_cb);
+      @(vif.mon_cb);
+    end
+  endtask
+endclass
+      
+//scoreboard.sv
+class scoreboard;
+  mailbox mon2sco;
+  transaction trans,trans1;
+  
+  function new(mailbox mon2sco);
+    this.mon2sco=mon2sco;
+  endfunction
+  
+  task get_msg;
+    forever begin
+      trans1=new();
+      mon2sco.get(trans);
+      trans1.data_in=trans.data_in;
+      ref_logic();
+      compare();
+    end
+  endtask
+  
+ task ref_logic();
+   trans1.parity_out <= (trans1.data_in[6]^trans1.data_in[5]^trans1.data_in[4]^ trans1.data_in[3]^trans1.data_in[2]^trans1.data_in[1]^trans1.data_in[0]);
+endtask
+
+  task compare();
+    $display("scoreboard");
+    if(trans1.parity_out==trans.parity_out)begin
+      $display("data_in=%b parity_out=%b ",trans1.data_in,trans1.parity_out);
+      $display("outputs are matching");
+    end
+    else begin
+      $display("data_in=%b parity_out=%b ",trans1.data_in,trans1.parity_out);
+      $display("outputs are not matching");
+    end
+  endtask
+endclass
+      
+      
