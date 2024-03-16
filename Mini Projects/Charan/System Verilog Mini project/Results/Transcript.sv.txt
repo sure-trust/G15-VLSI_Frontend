@@ -1,0 +1,420 @@
+display from top
+display from test
+display from environment
+Display from generator 
+din: 122  dout: 0  rd: 0  wr: 1   full: 0   empty: 0   count: 0
+Display from generator 
+din: 129  dout: 0  rd: 0  wr: 1   full: 0   empty: 0   count: 0
+Display from generator 
+din: 66  dout: 0  rd: 0  wr: 1   full: 0   empty: 0   count: 0
+Display from generator 
+din: 208  dout: 0  rd: 0  wr: 1   full: 0   empty: 0   count: 0
+Display from generator 
+din: 75  dout: 0  rd: 0  wr: 1   full: 0   empty: 0   count: 0
+Display from generator 
+din: 50  dout: 0  rd: 1  wr: 0   full: 0   empty: 0   count: 0
+Display from generator 
+din: 206  dout: 0  rd: 1  wr: 0   full: 0   empty: 0   count: 0
+Display from generator 
+din: 128  dout: 0  rd: 1  wr: 0   full: 0   empty: 0   count: 0
+Display from generator 
+din: 4  dout: 0  rd: 1  wr: 0   full: 0   empty: 0   count: 0
+Display from generator 
+din: 21  dout: 0  rd: 1  wr: 0   full: 0   empty: 0   count: 0
+Display from driver 
+din: 122  dout: 0  rd: 0  wr: 1   full: 0   empty: 0   count: 0
+Display from monitor 
+din: 122  dout: 0  rd: 0  wr: 1   full: 0   empty: 1   count: 0
+scoreboard
+din=122 dout=0 wr=1 rd=0 fifo_cnt=1
+outputs are matched
+Display from driver 
+din: 129  dout: 0  rd: 0  wr: 1   full: 0   empty: 0   count: 0
+Display from monitor 
+din: 129  dout: 0  rd: 0  wr: 1   full: 0   empty: 0   count: 1
+scoreboard
+din=129 dout=0 wr=1 rd=0 fifo_cnt=1
+outputs are matched
+Display from driver 
+din: 66  dout: 0  rd: 0  wr: 1   full: 0   empty: 0   count: 0
+Display from monitor 
+din: 66  dout: 0  rd: 0  wr: 1   full: 0   empty: 0   count: 2
+scoreboard
+din=66 dout=0 wr=1 rd=0 fifo_cnt=1
+outputs are matched
+Display from driver 
+din: 208  dout: 0  rd: 0  wr: 1   full: 0   empty: 0   count: 0
+Display from monitor 
+din: 208  dout: 0  rd: 0  wr: 1   full: 0   empty: 0   count: 3
+scoreboard
+din=208 dout=0 wr=1 rd=0 fifo_cnt=1
+outputs are matched
+Display from driver 
+din: 75  dout: 0  rd: 0  wr: 1   full: 0   empty: 0   count: 0
+Display from monitor 
+din: 75  dout: 0  rd: 0  wr: 1   full: 0   empty: 0   count: 4
+scoreboard
+din=75 dout=0 wr=1 rd=0 fifo_cnt=1
+outputs are matched
+Display from driver 
+din: 50  dout: 0  rd: 1  wr: 0   full: 0   empty: 0   count: 0
+Display from monitor 
+din: 50  dout: 0  rd: 1  wr: 0   full: 0   empty: 0   count: 5
+scoreboard
+din=50 dout=0 wr=0 rd=1 fifo_cnt=15
+outputs are matched
+Display from driver 
+din: 206  dout: 0  rd: 1  wr: 0   full: 0   empty: 0   count: 0
+Display from monitor 
+din: 206  dout: 122  rd: 1  wr: 0   full: 0   empty: 0   count: 4
+scoreboard
+din=206 dout=0 wr=0 rd=1 fifo_cnt=15
+outputs are didn't matches
+Display from driver 
+din: 128  dout: 0  rd: 1  wr: 0   full: 0   empty: 0   count: 0
+Display from monitor 
+din: 128  dout: 129  rd: 1  wr: 0   full: 0   empty: 0   count: 3
+scoreboard
+din=128 dout=0 wr=0 rd=1 fifo_cnt=15
+outputs are didn't matches
+Display from driver 
+din: 4  dout: 0  rd: 1  wr: 0   full: 0   empty: 0   count: 0
+Display from monitor 
+din: 4  dout: 66  rd: 1  wr: 0   full: 0   empty: 0   count: 2
+scoreboard
+din=4 dout=0 wr=0 rd=1 fifo_cnt=15
+outputs are didn't matches
+Display from driver 
+din: 21  dout: 0  rd: 1  wr: 0   full: 0   empty: 0   count: 0
+Display from monitor 
+din: 21  dout: 208  rd: 1  wr: 0   full: 0   empty: 0   count: 1
+scoreboard
+din=21 dout=0 wr=0 rd=1 fifo_cnt=15
+outputs are didn't matches
+Display from monitor 
+din: 21  dout: 75  rd: 1  wr: 0   full: 0   empty: 1   count: 0
+scoreboard
+din=21 dout=0 wr=0 rd=1 fifo_cnt=15
+outputs are didn't matches
+Display from monitor 
+din: 21  dout: 75  rd: 1  wr: 0   full: 0   empty: 1   count: 0
+scoreboard
+din=21 dout=0 wr=0 rd=1 fifo_cnt=15
+outputs are didn't matches
+Display from monitor 
+din: 21  dout: 75  rd: 1  wr: 0   full: 0   empty: 1   count: 0
+scoreboard
+din=21 dout=0 wr=0 rd=1 fifo_cnt=15
+outputs are didn't matches
+Display from monitor 
+din: 21  dout: 75  rd: 1  wr: 0   full: 0   empty: 1   count: 0
+scoreboard
+din=21 dout=0 wr=0 rd=1 fifo_cnt=15
+outputs are didn't matches
+Display from monitor 
+din: 21  dout: 75  rd: 1  wr: 0   full: 0   empty: 1   count: 0
+scoreboard
+din=21 dout=0 wr=0 rd=1 fifo_cnt=15
+outputs are didn't matches
+Display from monitor 
+din: 21  dout: 75  rd: 1  wr: 0   full: 0   empty: 1   count: 0
+scoreboard
+din=21 dout=0 wr=0 rd=1 fifo_cnt=15
+outputs are didn't matches
+Display from monitor 
+din: 21  dout: 75  rd: 1  wr: 0   full: 0   empty: 1   count: 0
+scoreboard
+din=21 dout=0 wr=0 rd=1 fifo_cnt=15
+outputs are didn't matches
+Display from monitor 
+din: 21  dout: 75  rd: 1  wr: 0   full: 0   empty: 1   count: 0
+scoreboard
+din=21 dout=0 wr=0 rd=1 fifo_cnt=15
+outputs are didn't matches
+Display from monitor 
+din: 21  dout: 75  rd: 1  wr: 0   full: 0   empty: 1   count: 0
+scoreboard
+din=21 dout=0 wr=0 rd=1 fifo_cnt=15
+outputs are didn't matches
+Display from monitor 
+din: 21  dout: 75  rd: 1  wr: 0   full: 0   empty: 1   count: 0
+scoreboard
+din=21 dout=0 wr=0 rd=1 fifo_cnt=15
+outputs are didn't matches
+Display from monitor 
+din: 21  dout: 75  rd: 1  wr: 0   full: 0   empty: 1   count: 0
+scoreboard
+din=21 dout=0 wr=0 rd=1 fifo_cnt=15
+outputs are didn't matches
+Display from monitor 
+din: 21  dout: 75  rd: 1  wr: 0   full: 0   empty: 1   count: 0
+scoreboard
+din=21 dout=0 wr=0 rd=1 fifo_cnt=15
+outputs are didn't matches
+Display from monitor 
+din: 21  dout: 75  rd: 1  wr: 0   full: 0   empty: 1   count: 0
+scoreboard
+din=21 dout=0 wr=0 rd=1 fifo_cnt=15
+outputs are didn't matches
+Display from monitor 
+din: 21  dout: 75  rd: 1  wr: 0   full: 0   empty: 1   count: 0
+scoreboard
+din=21 dout=0 wr=0 rd=1 fifo_cnt=15
+outputs are didn't matches
+Display from monitor 
+din: 21  dout: 75  rd: 1  wr: 0   full: 0   empty: 1   count: 0
+scoreboard
+din=21 dout=0 wr=0 rd=1 fifo_cnt=15
+outputs are didn't matches
+Display from monitor 
+din: 21  dout: 75  rd: 1  wr: 0   full: 0   empty: 1   count: 0
+scoreboard
+din=21 dout=0 wr=0 rd=1 fifo_cnt=15
+outputs are didn't matches
+Display from monitor 
+din: 21  dout: 75  rd: 1  wr: 0   full: 0   empty: 1   count: 0
+scoreboard
+din=21 dout=0 wr=0 rd=1 fifo_cnt=15
+outputs are didn't matches
+Display from monitor 
+din: 21  dout: 75  rd: 1  wr: 0   full: 0   empty: 1   count: 0
+scoreboard
+din=21 dout=0 wr=0 rd=1 fifo_cnt=15
+outputs are didn't matches
+Display from monitor 
+din: 21  dout: 75  rd: 1  wr: 0   full: 0   empty: 1   count: 0
+scoreboard
+din=21 dout=0 wr=0 rd=1 fifo_cnt=15
+outputs are didn't matches
+Display from monitor 
+din: 21  dout: 75  rd: 1  wr: 0   full: 0   empty: 1   count: 0
+scoreboard
+din=21 dout=0 wr=0 rd=1 fifo_cnt=15
+outputs are didn't matches
+Display from monitor 
+din: 21  dout: 75  rd: 1  wr: 0   full: 0   empty: 1   count: 0
+scoreboard
+din=21 dout=0 wr=0 rd=1 fifo_cnt=15
+outputs are didn't matches
+Display from monitor 
+din: 21  dout: 75  rd: 1  wr: 0   full: 0   empty: 1   count: 0
+scoreboard
+din=21 dout=0 wr=0 rd=1 fifo_cnt=15
+outputs are didn't matches
+Display from monitor 
+din: 21  dout: 75  rd: 1  wr: 0   full: 0   empty: 1   count: 0
+scoreboard
+din=21 dout=0 wr=0 rd=1 fifo_cnt=15
+outputs are didn't matches
+Display from monitor 
+din: 21  dout: 75  rd: 1  wr: 0   full: 0   empty: 1   count: 0
+scoreboard
+din=21 dout=0 wr=0 rd=1 fifo_cnt=15
+outputs are didn't matches
+Display from monitor 
+din: 21  dout: 75  rd: 1  wr: 0   full: 0   empty: 1   count: 0
+scoreboard
+din=21 dout=0 wr=0 rd=1 fifo_cnt=15
+outputs are didn't matches
+Display from monitor 
+din: 21  dout: 75  rd: 1  wr: 0   full: 0   empty: 1   count: 0
+scoreboard
+din=21 dout=0 wr=0 rd=1 fifo_cnt=15
+outputs are didn't matches
+Display from monitor 
+din: 21  dout: 75  rd: 1  wr: 0   full: 0   empty: 1   count: 0
+scoreboard
+din=21 dout=0 wr=0 rd=1 fifo_cnt=15
+outputs are didn't matches
+Display from monitor 
+din: 21  dout: 75  rd: 1  wr: 0   full: 0   empty: 1   count: 0
+scoreboard
+din=21 dout=0 wr=0 rd=1 fifo_cnt=15
+outputs are didn't matches
+Display from monitor 
+din: 21  dout: 75  rd: 1  wr: 0   full: 0   empty: 1   count: 0
+scoreboard
+din=21 dout=0 wr=0 rd=1 fifo_cnt=15
+outputs are didn't matches
+Display from monitor 
+din: 21  dout: 75  rd: 1  wr: 0   full: 0   empty: 1   count: 0
+scoreboard
+din=21 dout=0 wr=0 rd=1 fifo_cnt=15
+outputs are didn't matches
+Display from monitor 
+din: 21  dout: 75  rd: 1  wr: 0   full: 0   empty: 1   count: 0
+scoreboard
+din=21 dout=0 wr=0 rd=1 fifo_cnt=15
+outputs are didn't matches
+Display from monitor 
+din: 21  dout: 75  rd: 1  wr: 0   full: 0   empty: 1   count: 0
+scoreboard
+din=21 dout=0 wr=0 rd=1 fifo_cnt=15
+outputs are didn't matches
+Display from monitor 
+din: 21  dout: 75  rd: 1  wr: 0   full: 0   empty: 1   count: 0
+scoreboard
+din=21 dout=0 wr=0 rd=1 fifo_cnt=15
+outputs are didn't matches
+Display from monitor 
+din: 21  dout: 75  rd: 1  wr: 0   full: 0   empty: 1   count: 0
+scoreboard
+din=21 dout=0 wr=0 rd=1 fifo_cnt=15
+outputs are didn't matches
+Display from monitor 
+din: 21  dout: 75  rd: 1  wr: 0   full: 0   empty: 1   count: 0
+scoreboard
+din=21 dout=0 wr=0 rd=1 fifo_cnt=15
+outputs are didn't matches
+Display from monitor 
+din: 21  dout: 75  rd: 1  wr: 0   full: 0   empty: 1   count: 0
+scoreboard
+din=21 dout=0 wr=0 rd=1 fifo_cnt=15
+outputs are didn't matches
+Display from monitor 
+din: 21  dout: 75  rd: 1  wr: 0   full: 0   empty: 1   count: 0
+scoreboard
+din=21 dout=0 wr=0 rd=1 fifo_cnt=15
+outputs are didn't matches
+Display from monitor 
+din: 21  dout: 75  rd: 1  wr: 0   full: 0   empty: 1   count: 0
+scoreboard
+din=21 dout=0 wr=0 rd=1 fifo_cnt=15
+outputs are didn't matches
+Display from monitor 
+din: 21  dout: 75  rd: 1  wr: 0   full: 0   empty: 1   count: 0
+scoreboard
+din=21 dout=0 wr=0 rd=1 fifo_cnt=15
+outputs are didn't matches
+Display from monitor 
+din: 21  dout: 75  rd: 1  wr: 0   full: 0   empty: 1   count: 0
+scoreboard
+din=21 dout=0 wr=0 rd=1 fifo_cnt=15
+outputs are didn't matches
+Display from monitor 
+din: 21  dout: 75  rd: 1  wr: 0   full: 0   empty: 1   count: 0
+scoreboard
+din=21 dout=0 wr=0 rd=1 fifo_cnt=15
+outputs are didn't matches
+Display from monitor 
+din: 21  dout: 75  rd: 1  wr: 0   full: 0   empty: 1   count: 0
+scoreboard
+din=21 dout=0 wr=0 rd=1 fifo_cnt=15
+outputs are didn't matches
+Display from monitor 
+din: 21  dout: 75  rd: 1  wr: 0   full: 0   empty: 1   count: 0
+scoreboard
+din=21 dout=0 wr=0 rd=1 fifo_cnt=15
+outputs are didn't matches
+Display from monitor 
+din: 21  dout: 75  rd: 1  wr: 0   full: 0   empty: 1   count: 0
+scoreboard
+din=21 dout=0 wr=0 rd=1 fifo_cnt=15
+outputs are didn't matches
+Display from monitor 
+din: 21  dout: 75  rd: 1  wr: 0   full: 0   empty: 1   count: 0
+scoreboard
+din=21 dout=0 wr=0 rd=1 fifo_cnt=15
+outputs are didn't matches
+Display from monitor 
+din: 21  dout: 75  rd: 1  wr: 0   full: 0   empty: 1   count: 0
+scoreboard
+din=21 dout=0 wr=0 rd=1 fifo_cnt=15
+outputs are didn't matches
+Display from monitor 
+din: 21  dout: 75  rd: 1  wr: 0   full: 0   empty: 1   count: 0
+scoreboard
+din=21 dout=0 wr=0 rd=1 fifo_cnt=15
+outputs are didn't matches
+Display from monitor 
+din: 21  dout: 75  rd: 1  wr: 0   full: 0   empty: 1   count: 0
+scoreboard
+din=21 dout=0 wr=0 rd=1 fifo_cnt=15
+outputs are didn't matches
+Display from monitor 
+din: 21  dout: 75  rd: 1  wr: 0   full: 0   empty: 1   count: 0
+scoreboard
+din=21 dout=0 wr=0 rd=1 fifo_cnt=15
+outputs are didn't matches
+Display from monitor 
+din: 21  dout: 75  rd: 1  wr: 0   full: 0   empty: 1   count: 0
+scoreboard
+din=21 dout=0 wr=0 rd=1 fifo_cnt=15
+outputs are didn't matches
+Display from monitor 
+din: 21  dout: 75  rd: 1  wr: 0   full: 0   empty: 1   count: 0
+scoreboard
+din=21 dout=0 wr=0 rd=1 fifo_cnt=15
+outputs are didn't matches
+Display from monitor 
+din: 21  dout: 75  rd: 1  wr: 0   full: 0   empty: 1   count: 0
+scoreboard
+din=21 dout=0 wr=0 rd=1 fifo_cnt=15
+outputs are didn't matches
+Display from monitor 
+din: 21  dout: 75  rd: 1  wr: 0   full: 0   empty: 1   count: 0
+scoreboard
+din=21 dout=0 wr=0 rd=1 fifo_cnt=15
+outputs are didn't matches
+Display from monitor 
+din: 21  dout: 75  rd: 1  wr: 0   full: 0   empty: 1   count: 0
+scoreboard
+din=21 dout=0 wr=0 rd=1 fifo_cnt=15
+outputs are didn't matches
+Display from monitor 
+din: 21  dout: 75  rd: 1  wr: 0   full: 0   empty: 1   count: 0
+scoreboard
+din=21 dout=0 wr=0 rd=1 fifo_cnt=15
+outputs are didn't matches
+Display from monitor 
+din: 21  dout: 75  rd: 1  wr: 0   full: 0   empty: 1   count: 0
+scoreboard
+din=21 dout=0 wr=0 rd=1 fifo_cnt=15
+outputs are didn't matches
+Display from monitor 
+din: 21  dout: 75  rd: 1  wr: 0   full: 0   empty: 1   count: 0
+scoreboard
+din=21 dout=0 wr=0 rd=1 fifo_cnt=15
+outputs are didn't matches
+Display from monitor 
+din: 21  dout: 75  rd: 1  wr: 0   full: 0   empty: 1   count: 0
+scoreboard
+din=21 dout=0 wr=0 rd=1 fifo_cnt=15
+outputs are didn't matches
+Display from monitor 
+din: 21  dout: 75  rd: 1  wr: 0   full: 0   empty: 1   count: 0
+scoreboard
+din=21 dout=0 wr=0 rd=1 fifo_cnt=15
+outputs are didn't matches
+Display from monitor 
+din: 21  dout: 75  rd: 1  wr: 0   full: 0   empty: 1   count: 0
+scoreboard
+din=21 dout=0 wr=0 rd=1 fifo_cnt=15
+outputs are didn't matches
+Display from monitor 
+din: 21  dout: 75  rd: 1  wr: 0   full: 0   empty: 1   count: 0
+scoreboard
+din=21 dout=0 wr=0 rd=1 fifo_cnt=15
+outputs are didn't matches
+Display from monitor 
+din: 21  dout: 75  rd: 1  wr: 0   full: 0   empty: 1   count: 0
+scoreboard
+din=21 dout=0 wr=0 rd=1 fifo_cnt=15
+outputs are didn't matches
+Display from monitor 
+din: 21  dout: 75  rd: 1  wr: 0   full: 0   empty: 1   count: 0
+scoreboard
+din=21 dout=0 wr=0 rd=1 fifo_cnt=15
+outputs are didn't matches
+Display from monitor 
+din: 21  dout: 75  rd: 1  wr: 0   full: 0   empty: 1   count: 0
+scoreboard
+din=21 dout=0 wr=0 rd=1 fifo_cnt=15
+outputs are didn't matches
+Display from monitor 
+din: 21  dout: 75  rd: 1  wr: 0   full: 0   empty: 1   count: 0
+scoreboard
+din=21 dout=0 wr=0 rd=1 fifo_cnt=15
+outputs are didn't matches
+$finish called from file "testbench.sv", line 45.
+$finish at simulation time                  150
