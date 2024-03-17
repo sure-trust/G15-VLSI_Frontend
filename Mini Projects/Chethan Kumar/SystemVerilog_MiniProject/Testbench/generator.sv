@@ -7,17 +7,22 @@ class generator;
   endfunction
   
   task put_msg;
+    
     repeat(8)begin
       trans=new();
-      trans.randomize() with {wr_en==1 && rd_en==0;};
-      trans.display("generator");
+      assert(trans.randomize() with {wr_en==1 && rd_en==0;})
+        $display("Randomization succesful");
+      trans.display("[ Generator ]");
       gen2driv.put(trans);
+      
     end
     repeat(8)begin
       trans=new();
-      trans.randomize() with {wr_en==0 && rd_en==1 && din==0;};
+      assert(trans.randomize() with {wr_en==0 && rd_en==1 && din==0;})
+        $display("Randomization succesful");
       trans.display("[ Generator ]");
       gen2driv.put(trans);
+     
     end
     
   endtask
