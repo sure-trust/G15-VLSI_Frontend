@@ -1,4 +1,4 @@
- class generator;
+class generator;
   mailbox gen2driv;
   transaction trans;
   
@@ -7,17 +7,22 @@
   endfunction
   
   task put_msg;
-    repeat(5)begin
+    
+    repeat(8)begin
       trans=new();
-      trans.randomize() with {wr==1 && rd==0;din inside{[0:225]};};
-      trans.display("generator");
+      assert(trans.randomize() with {wr==1 && rd==0;})
+        $display("Randomization succesful");
+      trans.display("[ Generator ]");
       gen2driv.put(trans);
+      
     end
-    repeat(5)begin
+    repeat(8)begin
       trans=new();
-      trans.randomize() with {wr==0 && rd==1;din inside{[0:225]};};
-      trans.display("generator");
+      assert(trans.randomize() with {wr==0 && rd==1 && din==0;})
+        $display("Randomization succesful");
+      trans.display("[ Generator ]");
       gen2driv.put(trans);
+     
     end
     
   endtask

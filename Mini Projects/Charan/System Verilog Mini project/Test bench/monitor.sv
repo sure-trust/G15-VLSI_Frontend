@@ -1,10 +1,12 @@
 class monitor;
   mailbox mon2sco;
+  mailbox mon2cov;
   transaction trans;
   virtual intf vif;
   
-  function new(mailbox mon2sco,virtual intf vif);
+  function new(mailbox mon2sco,virtual intf vif,mailbox mon2cov);
     this.mon2sco=mon2sco;
+    this.mon2cov=mon2cov;
     this.vif=vif;
   endfunction
   
@@ -23,8 +25,9 @@ class monitor;
       trans.wr_ptr=vif.wr_ptr;
       trans.rd_ptr=vif.rd_ptr;
       mon2sco.put(trans);
-      trans.display("monitor");
-      
+      mon2cov.put(trans);
+      trans.display("[ Monitor ]");
+
     end
   endtask
 endclass
