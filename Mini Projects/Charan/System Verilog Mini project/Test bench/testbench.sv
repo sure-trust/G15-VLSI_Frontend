@@ -6,6 +6,7 @@
 `include "interface.sv"
 `include "monitor.sv"
 `include "scoreboard.sv"
+`include "coverage.sv"
 `include "environment.sv"
 `include "test.sv"
 

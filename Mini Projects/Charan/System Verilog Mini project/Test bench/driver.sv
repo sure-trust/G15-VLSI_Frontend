@@ -11,14 +11,15 @@ class driver;
   task get_msg;
     forever begin
       @(vif.driv_cb); 
-     // @(vif.driv_cb);
       gen2driv.get(trans);
-      vif.wr=trans.wr;
+     
+      
+      vif.din=trans.din;
       vif.rd=trans.rd;
-      vif.din=trans.din; //converting packet level to pin level data
-      trans.display("driver");
-      //@(vif.driv_cb);
-      //@(vif.driv_cb);
+      vif.wr=trans.wr;
+     
+      $display("from [ Driver ]");
+      
     end
   endtask
 endclass
