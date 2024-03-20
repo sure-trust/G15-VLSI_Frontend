@@ -1,0 +1,18 @@
+ --------------------------------------
+# Name    Type               Size  Value
+# --------------------------------------
+# req     mem_sequence_item  -     @617 
+#   data  integral           8     'hca 
+#   crc   integral           7     'h0  
+#   clk   integral           1     'h0  
+#   rst   integral           1     'h0  
+# --------------------------------------
+# --------------------------------------
+# Name    Type               Size  Value
+# --------------------------------------
+# req1    mem_sequence_item  -     @589 
+#   data  integral           8     'hca 
+#   crc   integral           7     'h7f 
+#   clk   integral           1     'h0  
+#   rst   integral           1     'h0  
+# --------------------------------------
