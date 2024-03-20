@@ -1,0 +1,293 @@
+UVM_INFO environment.sv(23) @ 0: uvm_test_top.env [id] -----------environment---------
+UVM_INFO sequence3.sv(17) @ 0: uvm_test_top.env.agen.seqr@@rst_dut [SEQ] MODE : RESET
+UVM_INFO driver.sv(25) @ 0: uvm_test_top.env.agen.driv [DRV] System Reset
+UVM_INFO sequence3.sv(17) @ 1: uvm_test_top.env.agen.seqr@@rst_dut [SEQ] MODE : RESET
+UVM_INFO driver.sv(25) @ 1: uvm_test_top.env.agen.driv [DRV] System Reset
+UVM_INFO monitor.sv(29) @ 1: uvm_test_top.env.agen.mon [MON] SYSTEM RESET DETECTED
+UVM_INFO scoreboard.sv(23) @ 1: uvm_test_top.env.sco [SCO] SYSTEM RESET DETECTED
+----------------------------------------------------------------
+coverage=50.00
+UVM_INFO sequence3.sv(17) @ 3: uvm_test_top.env.agen.seqr@@rst_dut [SEQ] MODE : RESET
+UVM_INFO driver.sv(25) @ 3: uvm_test_top.env.agen.driv [DRV] System Reset
+UVM_INFO monitor.sv(29) @ 3: uvm_test_top.env.agen.mon [MON] SYSTEM RESET DETECTED
+UVM_INFO scoreboard.sv(23) @ 3: uvm_test_top.env.sco [SCO] SYSTEM RESET DETECTED
+----------------------------------------------------------------
+coverage=50.00
+UVM_INFO sequence3.sv(17) @ 5: uvm_test_top.env.agen.seqr@@rst_dut [SEQ] MODE : RESET
+UVM_INFO driver.sv(25) @ 5: uvm_test_top.env.agen.driv [DRV] System Reset
+UVM_INFO monitor.sv(29) @ 5: uvm_test_top.env.agen.mon [MON] SYSTEM RESET DETECTED
+UVM_INFO scoreboard.sv(23) @ 5: uvm_test_top.env.sco [SCO] SYSTEM RESET DETECTED
+----------------------------------------------------------------
+coverage=50.00
+UVM_INFO sequence3.sv(17) @ 7: uvm_test_top.env.agen.seqr@@rst_dut [SEQ] MODE : RESET
+UVM_INFO driver.sv(25) @ 7: uvm_test_top.env.agen.driv [DRV] System Reset
+UVM_INFO monitor.sv(29) @ 7: uvm_test_top.env.agen.mon [MON] SYSTEM RESET DETECTED
+UVM_INFO scoreboard.sv(23) @ 7: uvm_test_top.env.sco [SCO] SYSTEM RESET DETECTED
+----------------------------------------------------------------
+coverage=50.00
+UVM_INFO sequence3.sv(17) @ 9: uvm_test_top.env.agen.seqr@@rst_dut [SEQ] MODE : RESET
+UVM_INFO driver.sv(25) @ 9: uvm_test_top.env.agen.driv [DRV] System Reset
+UVM_INFO monitor.sv(29) @ 9: uvm_test_top.env.agen.mon [MON] SYSTEM RESET DETECTED
+UVM_INFO scoreboard.sv(23) @ 9: uvm_test_top.env.sco [SCO] SYSTEM RESET DETECTED
+----------------------------------------------------------------
+coverage=50.00
+UVM_INFO sequence3.sv(17) @ 11: uvm_test_top.env.agen.seqr@@rst_dut [SEQ] MODE : RESET
+UVM_INFO driver.sv(25) @ 11: uvm_test_top.env.agen.driv [DRV] System Reset
+UVM_INFO monitor.sv(29) @ 11: uvm_test_top.env.agen.mon [MON] SYSTEM RESET DETECTED
+UVM_INFO scoreboard.sv(23) @ 11: uvm_test_top.env.sco [SCO] SYSTEM RESET DETECTED
+----------------------------------------------------------------
+coverage=50.00
+UVM_INFO sequence3.sv(17) @ 13: uvm_test_top.env.agen.seqr@@rst_dut [SEQ] MODE : RESET
+UVM_INFO driver.sv(25) @ 13: uvm_test_top.env.agen.driv [DRV] System Reset
+UVM_INFO monitor.sv(29) @ 13: uvm_test_top.env.agen.mon [MON] SYSTEM RESET DETECTED
+UVM_INFO scoreboard.sv(23) @ 13: uvm_test_top.env.sco [SCO] SYSTEM RESET DETECTED
+----------------------------------------------------------------
+coverage=50.00
+UVM_INFO sequence3.sv(17) @ 15: uvm_test_top.env.agen.seqr@@rst_dut [SEQ] MODE : RESET
+UVM_INFO driver.sv(25) @ 15: uvm_test_top.env.agen.driv [DRV] System Reset
+UVM_INFO monitor.sv(29) @ 15: uvm_test_top.env.agen.mon [MON] SYSTEM RESET DETECTED
+UVM_INFO scoreboard.sv(23) @ 15: uvm_test_top.env.sco [SCO] SYSTEM RESET DETECTED
+----------------------------------------------------------------
+coverage=50.00
+UVM_INFO sequence3.sv(17) @ 17: uvm_test_top.env.agen.seqr@@rst_dut [SEQ] MODE : RESET
+UVM_INFO driver.sv(25) @ 17: uvm_test_top.env.agen.driv [DRV] System Reset
+UVM_INFO monitor.sv(29) @ 17: uvm_test_top.env.agen.mon [MON] SYSTEM RESET DETECTED
+UVM_INFO scoreboard.sv(23) @ 17: uvm_test_top.env.sco [SCO] SYSTEM RESET DETECTED
+----------------------------------------------------------------
+coverage=50.00
+UVM_INFO sequence3.sv(17) @ 19: uvm_test_top.env.agen.seqr@@rst_dut [SEQ] MODE : RESET
+UVM_INFO driver.sv(25) @ 19: uvm_test_top.env.agen.driv [DRV] System Reset
+UVM_INFO monitor.sv(29) @ 19: uvm_test_top.env.agen.mon [MON] SYSTEM RESET DETECTED
+UVM_INFO scoreboard.sv(23) @ 19: uvm_test_top.env.sco [SCO] SYSTEM RESET DETECTED
+----------------------------------------------------------------
+coverage=50.00
+UVM_INFO sequence3.sv(17) @ 21: uvm_test_top.env.agen.seqr@@rst_dut [SEQ] MODE : RESET
+UVM_INFO driver.sv(25) @ 21: uvm_test_top.env.agen.driv [DRV] System Reset
+UVM_INFO monitor.sv(29) @ 21: uvm_test_top.env.agen.mon [MON] SYSTEM RESET DETECTED
+UVM_INFO scoreboard.sv(23) @ 21: uvm_test_top.env.sco [SCO] SYSTEM RESET DETECTED
+----------------------------------------------------------------
+coverage=50.00
+UVM_INFO sequence3.sv(17) @ 23: uvm_test_top.env.agen.seqr@@rst_dut [SEQ] MODE : RESET
+UVM_INFO driver.sv(25) @ 23: uvm_test_top.env.agen.driv [DRV] System Reset
+UVM_INFO monitor.sv(29) @ 23: uvm_test_top.env.agen.mon [MON] SYSTEM RESET DETECTED
+UVM_INFO scoreboard.sv(23) @ 23: uvm_test_top.env.sco [SCO] SYSTEM RESET DETECTED
+----------------------------------------------------------------
+coverage=50.00
+UVM_INFO sequence3.sv(17) @ 25: uvm_test_top.env.agen.seqr@@rst_dut [SEQ] MODE : RESET
+UVM_INFO driver.sv(25) @ 25: uvm_test_top.env.agen.driv [DRV] System Reset
+UVM_INFO monitor.sv(29) @ 25: uvm_test_top.env.agen.mon [MON] SYSTEM RESET DETECTED
+UVM_INFO scoreboard.sv(23) @ 25: uvm_test_top.env.sco [SCO] SYSTEM RESET DETECTED
+----------------------------------------------------------------
+coverage=50.00
+UVM_INFO sequence3.sv(17) @ 27: uvm_test_top.env.agen.seqr@@rst_dut [SEQ] MODE : RESET
+UVM_INFO driver.sv(25) @ 27: uvm_test_top.env.agen.driv [DRV] System Reset
+UVM_INFO monitor.sv(29) @ 27: uvm_test_top.env.agen.mon [MON] SYSTEM RESET DETECTED
+UVM_INFO scoreboard.sv(23) @ 27: uvm_test_top.env.sco [SCO] SYSTEM RESET DETECTED
+----------------------------------------------------------------
+coverage=50.00
+UVM_INFO sequence1.sv(17) @ 29: uvm_test_top.env.agen.seqr@@wdata [SEQ] MODE : WRITE DIN : 99 ADDR : 7 
+UVM_INFO driver.sv(36) @ 29: uvm_test_top.env.agen.driv [DRV] mode : WRITE addr : 7  din : 99
+UVM_INFO monitor.sv(41) @ 83: uvm_test_top.env.agen.mon [MON] DATA WRITE addr:0 data:0
+UVM_INFO scoreboard.sv(28) @ 83: uvm_test_top.env.sco [SCO] DATA WRITE OP  addr:0, wdata:0 arr_wr:0
+----------------------------------------------------------------
+coverage=62.50
+UVM_INFO sequence1.sv(17) @ 83: uvm_test_top.env.agen.seqr@@wdata [SEQ] MODE : WRITE DIN : 161 ADDR : 10 
+UVM_INFO driver.sv(36) @ 83: uvm_test_top.env.agen.driv [DRV] mode : WRITE addr : 10  din : 161
+UVM_INFO monitor.sv(41) @ 133: uvm_test_top.env.agen.mon [MON] DATA WRITE addr:7 data:99
+UVM_INFO scoreboard.sv(28) @ 133: uvm_test_top.env.sco [SCO] DATA WRITE OP  addr:7, wdata:99 arr_wr:99
+----------------------------------------------------------------
+coverage=62.50
+UVM_INFO sequence1.sv(17) @ 133: uvm_test_top.env.agen.seqr@@wdata [SEQ] MODE : WRITE DIN : 7 ADDR : 7 
+UVM_INFO driver.sv(36) @ 133: uvm_test_top.env.agen.driv [DRV] mode : WRITE addr : 7  din : 7
+UVM_INFO monitor.sv(41) @ 183: uvm_test_top.env.agen.mon [MON] DATA WRITE addr:10 data:161
+UVM_INFO scoreboard.sv(28) @ 183: uvm_test_top.env.sco [SCO] DATA WRITE OP  addr:10, wdata:161 arr_wr:161
+----------------------------------------------------------------
+coverage=62.50
+UVM_INFO sequence1.sv(17) @ 183: uvm_test_top.env.agen.seqr@@wdata [SEQ] MODE : WRITE DIN : 226 ADDR : 1 
+UVM_INFO driver.sv(36) @ 183: uvm_test_top.env.agen.driv [DRV] mode : WRITE addr : 1  din : 226
+UVM_INFO monitor.sv(41) @ 233: uvm_test_top.env.agen.mon [MON] DATA WRITE addr:7 data:7
+UVM_INFO scoreboard.sv(28) @ 233: uvm_test_top.env.sco [SCO] DATA WRITE OP  addr:7, wdata:7 arr_wr:7
+----------------------------------------------------------------
+coverage=62.50
+UVM_INFO sequence1.sv(17) @ 233: uvm_test_top.env.agen.seqr@@wdata [SEQ] MODE : WRITE DIN : 105 ADDR : 9 
+UVM_INFO driver.sv(36) @ 233: uvm_test_top.env.agen.driv [DRV] mode : WRITE addr : 9  din : 105
+UVM_INFO monitor.sv(41) @ 283: uvm_test_top.env.agen.mon [MON] DATA WRITE addr:1 data:226
+UVM_INFO scoreboard.sv(28) @ 283: uvm_test_top.env.sco [SCO] DATA WRITE OP  addr:1, wdata:226 arr_wr:226
+----------------------------------------------------------------
+coverage=62.50
+UVM_INFO sequence1.sv(17) @ 283: uvm_test_top.env.agen.seqr@@wdata [SEQ] MODE : WRITE DIN : 223 ADDR : 7 
+UVM_INFO driver.sv(36) @ 283: uvm_test_top.env.agen.driv [DRV] mode : WRITE addr : 7  din : 223
+UVM_INFO monitor.sv(41) @ 333: uvm_test_top.env.agen.mon [MON] DATA WRITE addr:9 data:105
+UVM_INFO scoreboard.sv(28) @ 333: uvm_test_top.env.sco [SCO] DATA WRITE OP  addr:9, wdata:105 arr_wr:105
+----------------------------------------------------------------
+coverage=62.50
+UVM_INFO sequence1.sv(17) @ 333: uvm_test_top.env.agen.seqr@@wdata [SEQ] MODE : WRITE DIN : 93 ADDR : 7 
+UVM_INFO driver.sv(36) @ 333: uvm_test_top.env.agen.driv [DRV] mode : WRITE addr : 7  din : 93
+UVM_INFO monitor.sv(41) @ 383: uvm_test_top.env.agen.mon [MON] DATA WRITE addr:7 data:223
+UVM_INFO scoreboard.sv(28) @ 383: uvm_test_top.env.sco [SCO] DATA WRITE OP  addr:7, wdata:223 arr_wr:223
+----------------------------------------------------------------
+coverage=62.50
+UVM_INFO sequence1.sv(17) @ 383: uvm_test_top.env.agen.seqr@@wdata [SEQ] MODE : WRITE DIN : 238 ADDR : 6 
+UVM_INFO driver.sv(36) @ 383: uvm_test_top.env.agen.driv [DRV] mode : WRITE addr : 6  din : 238
+UVM_INFO monitor.sv(41) @ 433: uvm_test_top.env.agen.mon [MON] DATA WRITE addr:7 data:93
+UVM_INFO scoreboard.sv(28) @ 433: uvm_test_top.env.sco [SCO] DATA WRITE OP  addr:7, wdata:93 arr_wr:93
+----------------------------------------------------------------
+coverage=62.50
+UVM_INFO sequence1.sv(17) @ 433: uvm_test_top.env.agen.seqr@@wdata [SEQ] MODE : WRITE DIN : 41 ADDR : 6 
+UVM_INFO driver.sv(36) @ 433: uvm_test_top.env.agen.driv [DRV] mode : WRITE addr : 6  din : 41
+UVM_INFO monitor.sv(41) @ 483: uvm_test_top.env.agen.mon [MON] DATA WRITE addr:6 data:238
+UVM_INFO scoreboard.sv(28) @ 483: uvm_test_top.env.sco [SCO] DATA WRITE OP  addr:6, wdata:238 arr_wr:238
+----------------------------------------------------------------
+coverage=62.50
+UVM_INFO sequence1.sv(17) @ 483: uvm_test_top.env.agen.seqr@@wdata [SEQ] MODE : WRITE DIN : 81 ADDR : 3 
+UVM_INFO driver.sv(36) @ 483: uvm_test_top.env.agen.driv [DRV] mode : WRITE addr : 3  din : 81
+UVM_INFO monitor.sv(41) @ 533: uvm_test_top.env.agen.mon [MON] DATA WRITE addr:6 data:41
+UVM_INFO scoreboard.sv(28) @ 533: uvm_test_top.env.sco [SCO] DATA WRITE OP  addr:6, wdata:41 arr_wr:41
+----------------------------------------------------------------
+coverage=62.50
+UVM_INFO sequence1.sv(17) @ 533: uvm_test_top.env.agen.seqr@@wdata [SEQ] MODE : WRITE DIN : 176 ADDR : 10 
+UVM_INFO driver.sv(36) @ 533: uvm_test_top.env.agen.driv [DRV] mode : WRITE addr : 10  din : 176
+UVM_INFO monitor.sv(41) @ 583: uvm_test_top.env.agen.mon [MON] DATA WRITE addr:3 data:81
+UVM_INFO scoreboard.sv(28) @ 583: uvm_test_top.env.sco [SCO] DATA WRITE OP  addr:3, wdata:81 arr_wr:81
+----------------------------------------------------------------
+coverage=62.50
+UVM_INFO sequence1.sv(17) @ 583: uvm_test_top.env.agen.seqr@@wdata [SEQ] MODE : WRITE DIN : 9 ADDR : 3 
+UVM_INFO driver.sv(36) @ 583: uvm_test_top.env.agen.driv [DRV] mode : WRITE addr : 3  din : 9
+UVM_INFO monitor.sv(41) @ 633: uvm_test_top.env.agen.mon [MON] DATA WRITE addr:10 data:176
+UVM_INFO scoreboard.sv(28) @ 633: uvm_test_top.env.sco [SCO] DATA WRITE OP  addr:10, wdata:176 arr_wr:176
+----------------------------------------------------------------
+coverage=62.50
+UVM_INFO sequence1.sv(17) @ 633: uvm_test_top.env.agen.seqr@@wdata [SEQ] MODE : WRITE DIN : 52 ADDR : 1 
+UVM_INFO driver.sv(36) @ 633: uvm_test_top.env.agen.driv [DRV] mode : WRITE addr : 1  din : 52
+UVM_INFO monitor.sv(41) @ 683: uvm_test_top.env.agen.mon [MON] DATA WRITE addr:3 data:9
+UVM_INFO scoreboard.sv(28) @ 683: uvm_test_top.env.sco [SCO] DATA WRITE OP  addr:3, wdata:9 arr_wr:9
+----------------------------------------------------------------
+coverage=62.50
+UVM_INFO sequence1.sv(17) @ 683: uvm_test_top.env.agen.seqr@@wdata [SEQ] MODE : WRITE DIN : 185 ADDR : 1 
+UVM_INFO driver.sv(36) @ 683: uvm_test_top.env.agen.driv [DRV] mode : WRITE addr : 1  din : 185
+UVM_INFO monitor.sv(41) @ 733: uvm_test_top.env.agen.mon [MON] DATA WRITE addr:1 data:52
+UVM_INFO scoreboard.sv(28) @ 733: uvm_test_top.env.sco [SCO] DATA WRITE OP  addr:1, wdata:52 arr_wr:52
+----------------------------------------------------------------
+coverage=62.50
+UVM_INFO sequence1.sv(17) @ 733: uvm_test_top.env.agen.seqr@@wdata [SEQ] MODE : WRITE DIN : 89 ADDR : 7 
+UVM_INFO driver.sv(36) @ 733: uvm_test_top.env.agen.driv [DRV] mode : WRITE addr : 7  din : 89
+UVM_INFO monitor.sv(41) @ 783: uvm_test_top.env.agen.mon [MON] DATA WRITE addr:1 data:185
+UVM_INFO scoreboard.sv(28) @ 783: uvm_test_top.env.sco [SCO] DATA WRITE OP  addr:1, wdata:185 arr_wr:185
+----------------------------------------------------------------
+coverage=62.50
+UVM_INFO sequence2.sv(17) @ 783: uvm_test_top.env.agen.seqr@@rdata [SEQ] MODE : READ ADDR : 3 
+UVM_INFO driver.sv(46) @ 783: uvm_test_top.env.agen.driv [DRV] mode : READ addr : 3  din : 158
+UVM_INFO monitor.sv(53) @ 831: uvm_test_top.env.agen.mon [MON] DATA READ addr:3 data:9 
+UVM_INFO scoreboard.sv(35) @ 831: uvm_test_top.env.sco [SCO] DATA MATCHED : addr:3, rdata:9
+----------------------------------------------------------------
+coverage=75.00
+UVM_INFO sequence2.sv(17) @ 831: uvm_test_top.env.agen.seqr@@rdata [SEQ] MODE : READ ADDR : 4 
+UVM_INFO driver.sv(46) @ 831: uvm_test_top.env.agen.driv [DRV] mode : READ addr : 4  din : 86
+UVM_INFO monitor.sv(53) @ 879: uvm_test_top.env.agen.mon [MON] DATA READ addr:4 data:0 
+UVM_INFO scoreboard.sv(35) @ 879: uvm_test_top.env.sco [SCO] DATA MATCHED : addr:4, rdata:0
+----------------------------------------------------------------
+coverage=75.00
+UVM_INFO sequence2.sv(17) @ 879: uvm_test_top.env.agen.seqr@@rdata [SEQ] MODE : READ ADDR : 0 
+UVM_INFO driver.sv(46) @ 879: uvm_test_top.env.agen.driv [DRV] mode : READ addr : 0  din : 72
+UVM_INFO monitor.sv(53) @ 927: uvm_test_top.env.agen.mon [MON] DATA READ addr:0 data:0 
+UVM_INFO scoreboard.sv(35) @ 927: uvm_test_top.env.sco [SCO] DATA MATCHED : addr:0, rdata:0
+----------------------------------------------------------------
+coverage=75.00
+UVM_INFO sequence2.sv(17) @ 927: uvm_test_top.env.agen.seqr@@rdata [SEQ] MODE : READ ADDR : 7 
+UVM_INFO driver.sv(46) @ 927: uvm_test_top.env.agen.driv [DRV] mode : READ addr : 7  din : 183
+UVM_INFO monitor.sv(53) @ 975: uvm_test_top.env.agen.mon [MON] DATA READ addr:7 data:89 
+UVM_INFO scoreboard.sv(37) @ 975: uvm_test_top.env.sco [SCO] TEST FAILED : addr:7, rdata:89 data_rd_arr:93
+----------------------------------------------------------------
+coverage=75.00
+UVM_INFO sequence2.sv(17) @ 975: uvm_test_top.env.agen.seqr@@rdata [SEQ] MODE : READ ADDR : 6 
+UVM_INFO driver.sv(46) @ 975: uvm_test_top.env.agen.driv [DRV] mode : READ addr : 6  din : 159
+UVM_INFO monitor.sv(53) @ 1023: uvm_test_top.env.agen.mon [MON] DATA READ addr:6 data:41 
+UVM_INFO scoreboard.sv(35) @ 1023: uvm_test_top.env.sco [SCO] DATA MATCHED : addr:6, rdata:41
+----------------------------------------------------------------
+coverage=75.00
+UVM_INFO sequence2.sv(17) @ 1023: uvm_test_top.env.agen.seqr@@rdata [SEQ] MODE : READ ADDR : 5 
+UVM_INFO driver.sv(46) @ 1023: uvm_test_top.env.agen.driv [DRV] mode : READ addr : 5  din : 159
+UVM_INFO monitor.sv(53) @ 1071: uvm_test_top.env.agen.mon [MON] DATA READ addr:5 data:0 
+UVM_INFO scoreboard.sv(35) @ 1071: uvm_test_top.env.sco [SCO] DATA MATCHED : addr:5, rdata:0
+----------------------------------------------------------------
+coverage=75.00
+UVM_INFO sequence2.sv(17) @ 1071: uvm_test_top.env.agen.seqr@@rdata [SEQ] MODE : READ ADDR : 10 
+UVM_INFO driver.sv(46) @ 1071: uvm_test_top.env.agen.driv [DRV] mode : READ addr : 10  din : 10
+UVM_INFO monitor.sv(53) @ 1119: uvm_test_top.env.agen.mon [MON] DATA READ addr:10 data:176 
+UVM_INFO scoreboard.sv(35) @ 1119: uvm_test_top.env.sco [SCO] DATA MATCHED : addr:10, rdata:176
+----------------------------------------------------------------
+coverage=75.00
+UVM_INFO sequence2.sv(17) @ 1119: uvm_test_top.env.agen.seqr@@rdata [SEQ] MODE : READ ADDR : 2 
+UVM_INFO driver.sv(46) @ 1119: uvm_test_top.env.agen.driv [DRV] mode : READ addr : 2  din : 210
+UVM_INFO monitor.sv(53) @ 1171: uvm_test_top.env.agen.mon [MON] DATA READ addr:2 data:0 
+UVM_INFO scoreboard.sv(35) @ 1171: uvm_test_top.env.sco [SCO] DATA MATCHED : addr:2, rdata:0
+----------------------------------------------------------------
+coverage=75.00
+UVM_INFO sequence2.sv(17) @ 1171: uvm_test_top.env.agen.seqr@@rdata [SEQ] MODE : READ ADDR : 9 
+UVM_INFO driver.sv(46) @ 1171: uvm_test_top.env.agen.driv [DRV] mode : READ addr : 9  din : 79
+UVM_INFO monitor.sv(53) @ 1219: uvm_test_top.env.agen.mon [MON] DATA READ addr:9 data:105 
+UVM_INFO scoreboard.sv(35) @ 1219: uvm_test_top.env.sco [SCO] DATA MATCHED : addr:9, rdata:105
+----------------------------------------------------------------
+coverage=75.00
+UVM_INFO sequence2.sv(17) @ 1219: uvm_test_top.env.agen.seqr@@rdata [SEQ] MODE : READ ADDR : 7 
+UVM_INFO driver.sv(46) @ 1219: uvm_test_top.env.agen.driv [DRV] mode : READ addr : 7  din : 109
+UVM_INFO monitor.sv(53) @ 1267: uvm_test_top.env.agen.mon [MON] DATA READ addr:7 data:89 
+UVM_INFO scoreboard.sv(37) @ 1267: uvm_test_top.env.sco [SCO] TEST FAILED : addr:7, rdata:89 data_rd_arr:93
+----------------------------------------------------------------
+coverage=75.00
+UVM_INFO sequence2.sv(17) @ 1267: uvm_test_top.env.agen.seqr@@rdata [SEQ] MODE : READ ADDR : 4 
+UVM_INFO driver.sv(46) @ 1267: uvm_test_top.env.agen.driv [DRV] mode : READ addr : 4  din : 89
+UVM_INFO monitor.sv(53) @ 1315: uvm_test_top.env.agen.mon [MON] DATA READ addr:4 data:0 
+UVM_INFO scoreboard.sv(35) @ 1315: uvm_test_top.env.sco [SCO] DATA MATCHED : addr:4, rdata:0
+----------------------------------------------------------------
+coverage=75.00
+UVM_INFO sequence2.sv(17) @ 1315: uvm_test_top.env.agen.seqr@@rdata [SEQ] MODE : READ ADDR : 3 
+UVM_INFO driver.sv(46) @ 1315: uvm_test_top.env.agen.driv [DRV] mode : READ addr : 3  din : 117
+UVM_INFO monitor.sv(53) @ 1363: uvm_test_top.env.agen.mon [MON] DATA READ addr:3 data:9 
+UVM_INFO scoreboard.sv(35) @ 1363: uvm_test_top.env.sco [SCO] DATA MATCHED : addr:3, rdata:9
+----------------------------------------------------------------
+coverage=75.00
+UVM_INFO sequence2.sv(17) @ 1363: uvm_test_top.env.agen.seqr@@rdata [SEQ] MODE : READ ADDR : 0 
+UVM_INFO driver.sv(46) @ 1363: uvm_test_top.env.agen.driv [DRV] mode : READ addr : 0  din : 172
+UVM_INFO monitor.sv(53) @ 1411: uvm_test_top.env.agen.mon [MON] DATA READ addr:0 data:0 
+UVM_INFO scoreboard.sv(35) @ 1411: uvm_test_top.env.sco [SCO] DATA MATCHED : addr:0, rdata:0
+----------------------------------------------------------------
+coverage=75.00
+UVM_INFO sequence2.sv(17) @ 1411: uvm_test_top.env.agen.seqr@@rdata [SEQ] MODE : READ ADDR : 9 
+UVM_INFO driver.sv(46) @ 1411: uvm_test_top.env.agen.driv [DRV] mode : READ addr : 9  din : 97
+UVM_INFO monitor.sv(53) @ 1459: uvm_test_top.env.agen.mon [MON] DATA READ addr:9 data:105 
+UVM_INFO scoreboard.sv(35) @ 1459: uvm_test_top.env.sco [SCO] DATA MATCHED : addr:9, rdata:105
+----------------------------------------------------------------
+coverage=75.00
+UVM_INFO sequence2.sv(17) @ 1459: uvm_test_top.env.agen.seqr@@rdata [SEQ] MODE : READ ADDR : 3 
+UVM_INFO driver.sv(46) @ 1459: uvm_test_top.env.agen.driv [DRV] mode : READ addr : 3  din : 106
+UVM_INFO monitor.sv(53) @ 1507: uvm_test_top.env.agen.mon [MON] DATA READ addr:3 data:9 
+UVM_INFO scoreboard.sv(35) @ 1507: uvm_test_top.env.sco [SCO] DATA MATCHED : addr:3, rdata:9
+----------------------------------------------------------------
+coverage=75.00
+Display from the TEST
+UVM_INFO /apps/vcsmx/vcs/S-2021.09//etc/uvm-1.2/src/base/uvm_objection.svh(1276) @ 1507: reporter [TEST_DONE] 'run' phase is ready to proceed to the 'extract' phase
+UVM_INFO /apps/vcsmx/vcs/S-2021.09//etc/uvm-1.2/src/base/uvm_report_server.svh(904) @ 1507: reporter [UVM/REPORT/SERVER] 
+--- UVM Report Summary ---
+
+** Report counts by severity
+UVM_INFO :  182
+UVM_WARNING :    0
+UVM_ERROR :    0
+UVM_FATAL :    0
+** Report counts by id
+[DRV]    45
+[MON]    44
+[RNTST]     1
+[SCO]    44
+[SEQ]    45
+[TEST_DONE]     1
+[UVM/RELNOTES]     1
+[id]     1
+
+$finish called from file "/apps/vcsmx/vcs/S-2021.09//etc/uvm-1.2/src/base/uvm_root.svh", line 527.
+$finish at simulation time                 1507
+           V C S   S i m u l a t i o n   R e p o r t 
+Time: 1507 ns
+CPU Time:      1.000 seconds;       Data structure size:   0.3Mb
+Wed Mar 20 08:55:55 2024
