@@ -13,13 +13,21 @@ class monitor;
   task put_msg;
     forever begin
       @(vif.mon_cb);
-      @(vif.mon_cb);
       trans=new();
-      trans.in=vif.in;
-      trans.out=vif.out;
+      trans.rd=vif.rd;
+      trans.wr=vif.wr;
+      trans.din=vif.din;
+      trans.full=vif.full;
+      trans.empty=vif.empty;
+      trans.dout=vif.dout;
+      trans.fifo_cnt=vif.fifo_cnt;
+      trans.fifo_mem=vif.fifo_mem;
+      trans.wr_ptr=vif.wr_ptr;
+      trans.rd_ptr=vif.rd_ptr;
       mon2sco.put(trans);
       mon2cov.put(trans);
-      trans.display("monitor");
-     end
+      trans.display("[ Monitor ]");
+
+    end
   endtask
 endclass

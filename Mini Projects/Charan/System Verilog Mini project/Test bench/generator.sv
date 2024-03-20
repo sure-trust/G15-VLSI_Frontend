@@ -10,7 +10,7 @@ class generator;
     
     repeat(8)begin
       trans=new();
-      assert(trans.randomize() with {wr_en==1 && rd_en==0;})
+      assert(trans.randomize() with {wr==1 && rd==0;})
         $display("Randomization succesful");
       trans.display("[ Generator ]");
       gen2driv.put(trans);
@@ -18,7 +18,7 @@ class generator;
     end
     repeat(8)begin
       trans=new();
-      assert(trans.randomize() with {wr_en==0 && rd_en==1 && din==0;})
+      assert(trans.randomize() with {wr==0 && rd==1 && din==0;})
         $display("Randomization succesful");
       trans.display("[ Generator ]");
       gen2driv.put(trans);
