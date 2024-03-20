@@ -1,0 +1,332 @@
+//testbench.sv
+`include "list.svh" 
+
+module top();
+
+    intf vif();
+  
+    crc7 dut (
+        .clk(vif.clk),
+        .rst(vif.rst),
+        .data(vif.data),
+        .crc(vif.crc)
+    );
+
+    initial begin
+        vif.clk = 0;
+        vif.rst = 1;
+        #5 vif.rst = 0;
+    end
+  
+    always #5 vif.clk=~vif.clk;
+
+    initial begin
+        $display("display from module top");
+        uvm_config_db#(virtual intf)::set(uvm_root::get(), "*", "vif", vif);
+    end
+  
+    initial begin
+        run_test("mem_test");
+    end
+  
+    initial begin
+        $dumpfile("dump.vcd");
+        $dumpvars;
+        #100 $finish();
+    end
+endmodule
+
+//test.sv
+class mem_test extends uvm_test;
+  `uvm_component_utils(mem_test) 
+  
+  mem_env env;
+  mem_sequence seq;
+  
+  function new(string name="mem_test",uvm_component parent);
+    super.new(name,parent);
+  endfunction
+  
+  virtual function void build_phase(uvm_phase phase);
+    super.build_phase(phase);
+    env=mem_env::type_id::create("env",this);
+    seq=mem_sequence::type_id::create("seq");
+  endfunction
+  
+  virtual task run_phase(uvm_phase phase);
+    super.run_phase(phase);
+    phase.raise_objection(this); 
+    seq.start(env.agen.seqr);
+    #100;
+    phase.drop_objection(this);
+    `uvm_info("id","---------------TEST----------------",UVM_MEDIUM)
+  endtask
+endclass
+    
+//sequence_item.sv
+class mem_sequence_item extends uvm_sequence_item;
+  rand bit [7:0] data;
+  bit [6:0] crc;
+  bit clk;
+  bit rst;
+  
+  `uvm_object_utils_begin(mem_sequence_item)
+  `uvm_field_int(data, UVM_ALL_ON)
+  `uvm_field_int(crc, UVM_ALL_ON)
+  `uvm_field_int(clk, UVM_ALL_ON)
+  `uvm_field_int(rst, UVM_ALL_ON)
+  `uvm_object_utils_end
+  
+    constraint randomize_data {
+      data inside {8'b11001010};
+    }
+ 
+  function new(string name = "mem_sequence_item");
+    super.new(name);
+  endfunction
+  
+endclass
+
+//sequence.sv
+class mem_sequence extends uvm_sequence#(mem_sequence_item);
+  `uvm_object_utils(mem_sequence)
+  
+  function new(string name = "mem_sequence");
+    super.new(name);
+  endfunction
+  
+  virtual task body();
+    repeat(5)begin
+      req=mem_sequence_item::type_id::create("req");
+      wait_for_grant();
+      req.randomize();
+      send_request(req);
+      wait_for_item_done();
+  //    $display("-----------sequence------------");
+  //    req.print();
+    end
+  endtask
+endclass
+
+//environment.sv
+class mem_env extends uvm_env;
+  `uvm_component_utils(mem_env)
+  
+  mem_agent agen;
+  mem_scoreboard sb;
+  uvm_analysis_port #(mem_sequence_item) analysis_port;
+  
+  function new(string name = "mem_env",uvm_component parent);
+    super.new(name,parent);
+  endfunction
+  
+  virtual function void build_phase(uvm_phase phase);
+    super.build_phase(phase);
+    agen = mem_agent::type_id::create("agen",this);
+    sb = mem_scoreboard::type_id::create("sb", this);
+    analysis_port = new("analysis_port", this);
+  endfunction
+  
+  virtual function void connect_phase(uvm_phase phase);
+    super.connect_phase(phase);
+    agen.mon.analysis_port.connect(sb.analysis_export);
+  endfunction
+
+endclass
+
+
+//agent.sv
+class mem_agent extends uvm_agent;
+  `uvm_component_utils(mem_agent)
+  
+  mem_sequencer seqr;
+  mem_driver dri;
+  mem_monitor mon;
+  
+  function new(string name = "mem_agent",uvm_component parent);
+    super.new(name,parent);
+  endfunction
+  
+  virtual function void build_phase(uvm_phase phase);
+    super.build_phase(phase);
+    seqr=mem_sequencer::type_id::create("seqr",this);
+    dri=mem_driver::type_id::create("dri",this);
+    mon=mem_monitor::type_id::create("mon",this);
+  endfunction
+
+  virtual function void connect_phase(uvm_phase phase);
+    super.connect_phase(phase);
+    dri.seq_item_port.connect(seqr.seq_item_export);
+  endfunction
+endclass
+
+//sequencer.sv
+  class mem_sequencer extends uvm_sequencer#(mem_sequence_item);
+  `uvm_component_utils(mem_sequencer)
+  
+  function new(string name = "mem_sequencer",uvm_component parent);
+    super.new(name,parent);
+  endfunction
+  
+endclass
+
+//driver.sv
+    class mem_driver extends uvm_driver#(mem_sequence_item);
+  `uvm_component_utils(mem_driver)
+  
+  virtual intf vif;
+  
+  function new(string name = "mem_driver", uvm_component parent);
+    super.new(name, parent);
+  endfunction
+  
+  virtual function void build_phase(uvm_phase phase);
+    super.build_phase(phase);
+    uvm_config_db#(virtual intf)::get(this, "*", "vif", vif);
+  endfunction
+  
+  virtual task run_phase(uvm_phase phase);
+    super.run_phase(phase);
+    forever begin
+      seq_item_port.get_next_item(req);
+      drive();
+      seq_item_port.item_done();
+    end
+  endtask
+  
+  virtual task drive();
+    begin
+       @(vif.clk);
+      vif.data=req.data;
+      @(vif.clk);
+    end
+  endtask
+endclass
+    
+//interface.sv
+  interface intf();
+  logic [7:0] data;
+  logic [6:0] crc;
+  logic clk;
+  logic rst;
+  
+  clocking dri_cb @(posedge clk);
+    output data;
+    input crc;
+  endclocking
+  
+  clocking mon_cb @(posedge clk);
+    input data;
+    input crc;
+  endclocking
+endinterface
+
+//monitor.sv
+  class mem_monitor extends uvm_monitor;
+  `uvm_component_utils(mem_monitor)
+  
+  uvm_analysis_port#(mem_sequence_item) analysis_port;
+  
+  virtual intf vif;
+  mem_sequence_item req;
+  
+  function new(string name = "mem_monitor", uvm_component parent);
+    super.new(name, parent);
+  endfunction
+  
+  virtual function void  build_phase(uvm_phase phase);
+    super.build_phase(phase);
+    uvm_config_db#(virtual intf)::get(this,"*","vif",vif);
+    analysis_port = new("analysis_port", this);
+  endfunction
+  
+  virtual task run_phase(uvm_phase phase);
+    req=mem_sequence_item::type_id::create("req");
+    forever begin
+      @(vif.mon_cb);
+      @(vif.mon_cb);
+      req.data<=vif.mon_cb.data;
+      req.crc<=vif.mon_cb.crc;
+     // $display("-----------monitor------------");
+    //  req.print();
+      analysis_port.write(req);
+      
+    end
+  endtask
+endclass
+
+//scoreboard.sv
+  class mem_scoreboard extends uvm_scoreboard;
+  `uvm_component_utils(mem_scoreboard)
+  
+  mem_sequence_item req1,req;
+  uvm_analysis_imp#(mem_sequence_item, mem_scoreboard) analysis_export;
+
+  function new(string name="mem_scoreboard", uvm_component parent);
+    super.new(name, parent);
+  endfunction
+
+  virtual function void build_phase(uvm_phase phase);
+    super.build_phase(phase);
+    req = mem_sequence_item::type_id::create("req");
+    req1 = mem_sequence_item::type_id::create("req1");
+    analysis_export = new("analysis_export", this);
+  endfunction
+
+  virtual task write(mem_sequence_item req);
+    bit [6:0] expected_crc;
+    req1.data=req.data;
+    expected_crc = compute_crc(req.data);
+      // Compare expected CRC with received CRC
+    req1.crc=expected_crc;
+    if (req.crc !== req1.crc)
+      begin
+        `uvm_error(get_type_name(), $sformatf("Mismatch: Expected CRC = %0h, Received CRC = %0h", expected_crc, req.crc));
+         req.print();
+        req1.print();
+      end
+    else
+      begin
+        req.print();
+        req1.print();
+      end
+  endtask
+
+  function bit [6:0] compute_crc(bit [7:0] data);
+    reg [6:0] crc;
+    bit g0;
+   
+    crc = 7'b0000000; // Initialize CRC register
+    
+    // Loop through each bit of the input data
+    for (int i = 0; i < 8; i++) begin
+      g0 = data[7-i] ^ crc[6];
+        crc[6] = crc[5];
+        crc[5] = crc[4];
+        crc[4] = crc[3];
+        crc[3] = crc[2] ^ g0;
+        crc[2] = crc[1];
+        crc[1] = crc[0];
+        crc[0] = g0;
+    end
+
+    return crc; // Return computed CRC value
+endfunction
+endclass
+
+//list.svh
+  `include "uvm_macros.svh"
+import uvm_pkg::*;
+`include "interface.sv"
+`include "sequence_item.sv"
+`include "sequence.sv"
+`include "sequencer.sv"
+`include "driver.sv"
+`include "monitor.sv"
+`include "scoreboard.sv"
+`include "agent.sv"
+`include "environment.sv"
+`include "test.sv"
+
+
+  
