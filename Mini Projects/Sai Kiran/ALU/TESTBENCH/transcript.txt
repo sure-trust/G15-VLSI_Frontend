@@ -1,0 +1,34 @@
+
+UVM_INFO @ 0: reporter [RNTST] Running test alu_test...
+UVM_INFO scoreboard.sv(89) @ 25: uvm_test_top.env.scb [COMPARE] Transaction Passed! ACT= 96, EXP= 96
+UVM_INFO scoreboard.sv(89) @ 33: uvm_test_top.env.scb [COMPARE] Transaction Passed! ACT= 96, EXP= 96
+UVM_INFO scoreboard.sv(89) @ 41: uvm_test_top.env.scb [COMPARE] Transaction Passed! ACT= 31, EXP= 31
+UVM_INFO scoreboard.sv(89) @ 49: uvm_test_top.env.scb [COMPARE] Transaction Passed! ACT=  4, EXP=  4
+UVM_INFO scoreboard.sv(89) @ 57: uvm_test_top.env.scb [COMPARE] Transaction Passed! ACT=  4, EXP=  4
+UVM_INFO scoreboard.sv(89) @ 65: uvm_test_top.env.scb [COMPARE] Transaction Passed! ACT= 11, EXP= 11
+UVM_INFO scoreboard.sv(89) @ 73: uvm_test_top.env.scb [COMPARE] Transaction Passed! ACT= 40, EXP= 40
+UVM_INFO scoreboard.sv(89) @ 81: uvm_test_top.env.scb [COMPARE] Transaction Passed! ACT= 40, EXP= 40
+UVM_INFO scoreboard.sv(89) @ 89: uvm_test_top.env.scb [COMPARE] Transaction Passed! ACT= 31, EXP= 31
+UVM_INFO scoreboard.sv(89) @ 97: uvm_test_top.env.scb [COMPARE] Transaction Passed! ACT=112, EXP=112
+UVM_INFO scoreboard.sv(89) @ 105: uvm_test_top.env.scb [COMPARE] Transaction Passed! ACT=112, EXP=112
+UVM_INFO scoreboard.sv(89) @ 113: uvm_test_top.env.scb [COMPARE] Transaction Passed! ACT= 14, EXP= 14
+UVM_INFO scoreboard.sv(89) @ 121: uvm_test_top.env.scb [COMPARE] Transaction Passed! ACT= 28, EXP= 28
+UVM_INFO scoreboard.sv(89) @ 129: uvm_test_top.env.scb [COMPARE] Transaction Passed! ACT= 28, EXP= 28
+UVM_INFO scoreboard.sv(89) @ 137: uvm_test_top.env.scb [COMPARE] Transaction Passed! ACT= 35, EXP= 35
+UVM_INFO scoreboard.sv(89) @ 145: uvm_test_top.env.scb [COMPARE] Transaction Passed! ACT= 90, EXP= 90
+UVM_INFO scoreboard.sv(89) @ 153: uvm_test_top.env.scb [COMPARE] Transaction Passed! ACT= 90, EXP= 90
+UVM_INFO scoreboard.sv(89) @ 161: uvm_test_top.env.scb [COMPARE] Transaction Passed! ACT=144, EXP=144
+UVM_INFO scoreboard.sv(89) @ 169: uvm_test_top.env.scb [COMPARE] Transaction Passed! ACT= 35, EXP= 35
+UVM_INFO scoreboard.sv(89) @ 177: uvm_test_top.env.scb [COMPARE] Transaction Passed! ACT= 35, EXP= 35
+UVM_INFO scoreboard.sv(89) @ 185: uvm_test_top.env.scb [COMPARE] Transaction Passed! ACT= 14, EXP= 14
+UVM_INFO scoreboard.sv(89) @ 193: uvm_test_top.env.scb [COMPARE] Transaction Passed! ACT=  2, EXP=  2
+UVM_INFO scoreboard.sv(89) @ 201: uvm_test_top.env.scb [COMPARE] Transaction Passed! ACT=  2, EXP=  2
+UVM_INFO scoreboard.sv(89) @ 209: uvm_test_top.env.scb [COMPARE] Transaction Passed! ACT=147, EXP=147
+UVM_INFO scoreboard.sv(89) @ 217: uvm_test_top.env.scb [COMPARE] Transaction Passed! ACT=  1, EXP=  1
+UVM_INFO scoreboard.sv(89) @ 225: uvm_test_top.env.scb [COMPARE] Transaction Passed! ACT=  1, EXP=  1
+UVM_INFO scoreboard.sv(89) @ 233: uvm_test_top.env.scb [COMPARE] Transaction Passed! ACT= 12, EXP= 12
+UVM_INFO scoreboard.sv(89) @ 241: uvm_test_top.env.scb [COMPARE] Transaction Passed! ACT= 35, EXP= 35
+UVM_INFO scoreboard.sv(89) @ 249: uvm_test_top.env.scb [COMPARE] Transaction Passed! ACT= 35, EXP= 35
+UVM_INFO /apps/vcsmx/vcs/S-2021.09//etc/uvm-1.2/src/base/uvm_objection.svh(1276) @ 255: reporter [TEST_DONE] 'run' phase is ready to proceed to the 'extract' phase
+UVM_INFO /apps/vcsmx/vcs/S-2021.09//etc/uvm-1.2/src/base/uvm_report_server.svh(904) @ 255: reporter [UVM/REPORT/SERVER] 
+--- UVM Report Summary ---
