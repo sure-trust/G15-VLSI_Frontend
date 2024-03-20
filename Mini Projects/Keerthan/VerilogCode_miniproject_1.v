@@ -24,6 +24,7 @@ module password_RAM_ROM (
     reg [7:0] ram_data;
     reg [7:0] rom_data;
   reg [7:0] read_data;
+    reg [7:0] read_data2;
   
  
 
@@ -58,9 +59,9 @@ module password_RAM_ROM (
         end else begin
             // Read data from file when read enable is high
           rom= $fopen( "rom_file.txt", "r"); // Open file in read mode
-          $fscanf(rom, "%d", read_data);  // Read data from file
+            $fscanf(rom, "%d", read_data2);  // Read data from file
           $fclose(rom);            // Close the file
-            data_output <= read_data;                    // Assign read data to output
+            data_output <= read_data2;                    // Assign read data to output
         end
       end 
     end
