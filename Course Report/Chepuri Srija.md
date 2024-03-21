@@ -23,6 +23,6 @@ Below is a table summarizing the mini projects and final project completed durin
 
 | Description                               | Link                                    |
 |-------------------------------------------|-----------------------------------------|
-| Mini Projects: Verilog based digital filter using hancarslon adder     |[click here](https://github.com/Chepurisrija/G15-VLSI_Frontend/blob/main/Mini%20Projects/Srija/FIR%20filter%20using%20han%20carslon%20adder%20design%20mini%20project.sv)[clickhere](https://github.com/Chepurisrija/G15-VLSI_Frontend/blob/main/Mini%20Projects/Srija/FIR%20filter%20using%20han%20carslon%20adder%20testbench.sv)                         |
-|Mini Projects: Verfication of SIPO using System Verilog    | [click here](https://github.com/Chepurisrija/G15-VLSI_Frontend/blob/main/Mini%20Projects/Srija/sv_design/design.sv)[clickhere](https://github.com/Chepurisrija/G15-VLSI_Frontend/tree/main/Mini%20Projects/Srija/sv_test)                       |
-| Final Project: Verilog based ALU using Modified booth multiplier     | [click here](https://github.com/Chepurisrija/G15-VLSI_Frontend/blob/main/Final%20Capstone%20Project/Srija/MAJOR_design/design.sv)[clickhere](https://github.com/Chepurisrija/G15-VLSI_Frontend/blob/main/Final%20Capstone%20Project/Srija/MAJOR_tb/testbench.sv)                         |
+| Mini Projects: Verilog based digital filter using hancarslon adder,Verfication of SIPO using SV|[click here](https://github.com/Chepurisrija/G15-VLSI_Frontend/tree/main/Mini%20Projects/Srija)                         |
+
+| Final Project: Verilog based ALU using Modified booth multiplier     | [click here](https://github.com/Chepurisrija/G15-VLSI_Frontend/tree/main/Final%20Capstone%20Project/Srija)                         |
