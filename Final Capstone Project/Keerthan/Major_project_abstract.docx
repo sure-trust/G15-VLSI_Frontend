@@ -1,0 +1,8 @@
+			Title:UVM Based Verification of APB Protocol
+Abstract:
+The Universal Verification Methodology (UVM) based verification environment for an Advanced Peripheral Bus (APB) protocol is designed and implemented to validate the functionality of an APB interface. The verification environment includes a random stimulus generator for triggering violation protocols, simulating read mismatch scenarios, and ensuring compliance with protocol rules. Additionally, the environment verifies the correctness of read data against expected results. This verification methodology enables comprehensive testing of the APB interface, ensuring its robustness and reliability in diverse operational scenarios.
+
+Applications of APB Protocol:
+•	APB provides a standardized interface for connecting low-speed peripherals to a system-on-chip (SoC), facilitating easy integration and communication.
+•	With its simplicity and low-power consumption, APB is ideal for interfacing with peripherals that do not require high-speed data transfer, optimizing overall system performance.
+
