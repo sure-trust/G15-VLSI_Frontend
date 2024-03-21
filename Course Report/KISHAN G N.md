@@ -23,5 +23,5 @@ Below is a table summarizing the mini projects and final project completed durin
 
 | Description                               | Link                                    |
 |-------------------------------------------|-----------------------------------------|
-| Mini Projects: Implementation of UART transmitter and receiver using verilog, Verification of even parity generator using system verilog | [click here](https://github.com/Kishan-G-N/G15-VLSI_Frontend/tree/main/Mini%20Projects/Kishan)
-| Final Project:   Verification of CRC (cyclic redundancy check) using UVM    | [click here](https://github.com/Kishan-G-N/G15-VLSI_Frontend/tree/main/Final%20Capstone%20Project/Kishan)
+| Mini Projects: Implementation of UART transmitter and receiver using verilog, Verification of even parity generator using system verilog | [click here](https://github.com/sure-trust/G15-VLSI_Frontend/tree/main/Mini%20Projects/Kishan)
+| Final Project:   Verification of CRC (cyclic redundancy check) using UVM    | [click here](https://github.com/sure-trust/G15-VLSI_Frontend/tree/main/Final%20Capstone%20Project/Kishan)
