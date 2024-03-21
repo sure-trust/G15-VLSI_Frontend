@@ -32,7 +32,7 @@ module top();
     initial begin
         $dumpfile("dump.vcd");
         $dumpvars;
-        #100 $finish();
+        #1000 $finish();
     end
 endmodule
 
@@ -57,7 +57,7 @@ class mem_test extends uvm_test;
     super.run_phase(phase);
     phase.raise_objection(this); 
     seq.start(env.agen.seqr);
-    #100;
+    #30;
     phase.drop_objection(this);
     `uvm_info("id","---------------TEST----------------",UVM_MEDIUM)
   endtask
@@ -67,18 +67,14 @@ endclass
 class mem_sequence_item extends uvm_sequence_item;
   rand bit [7:0] data;
   bit [6:0] crc;
-  bit clk;
-  bit rst;
   
   `uvm_object_utils_begin(mem_sequence_item)
   `uvm_field_int(data, UVM_ALL_ON)
   `uvm_field_int(crc, UVM_ALL_ON)
-  `uvm_field_int(clk, UVM_ALL_ON)
-  `uvm_field_int(rst, UVM_ALL_ON)
   `uvm_object_utils_end
   
     constraint randomize_data {
-      data inside {8'b11001010};
+      data inside {8'hca,8'hff,8'hbb,8'h9c,8'hba,8'h44,8'h99,8'h1d,8'h8f,8'hfd,8'h5d,8'h4e,8'h11,8'hdd,8'hcc,8'h55,8'h38,8'h85,8'he0,8'h91,8'h18,8'hf0};
     }
  
   function new(string name = "mem_sequence_item");
@@ -96,7 +92,7 @@ class mem_sequence extends uvm_sequence#(mem_sequence_item);
   endfunction
   
   virtual task body();
-    repeat(5)begin
+    repeat(30)begin
       req=mem_sequence_item::type_id::create("req");
       wait_for_grant();
       req.randomize();
@@ -199,6 +195,9 @@ endclass
        @(vif.clk);
       vif.data=req.data;
       @(vif.clk);
+      vif.rst = 1'b0;
+      @(vif.clk);
+      vif.rst = 1'b1;
     end
   endtask
 endclass
@@ -250,7 +249,7 @@ endinterface
      // $display("-----------monitor------------");
     //  req.print();
       analysis_port.write(req);
-      
+      @(vif.mon_cb);
     end
   endtask
 endclass
