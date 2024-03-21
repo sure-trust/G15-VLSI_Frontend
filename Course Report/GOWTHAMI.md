@@ -23,5 +23,5 @@ Below is a table summarizing the mini projects and final project completed durin
 
 | Description                                                                               | Link                                    |
 |-------------------------------------------------------------------------------------------|-----------------------------------------|
-| Mini Projects:AES Algorithm implementation in verilog, Vending machine verification in SV |[click here](https://github.com/sure-trust/G15-VLSI_Frontend/tree/main/Mini%20Projects/Gowthami)
-| Final Project:Verification of AHB protocol using UVM   |[click here](https://github.com/sure-trust/G15-VLSI_Frontend/tree/main/Final%20Capstone%20Project/Gowthami)                  
+| Mini Projects: AES Algorithm implementation in verilog, Vending machine verification in SV |[click here](https://github.com/sure-trust/G15-VLSI_Frontend/tree/main/Mini%20Projects/Gowthami)
+| Final Project: Verification of AHB protocol using UVM   |[click here](https://github.com/sure-trust/G15-VLSI_Frontend/tree/main/Final%20Capstone%20Project/Gowthami)                  
