@@ -1,0 +1,30 @@
+module crc7(
+    input wire clk,
+    input wire rst,
+    input wire [7:0] data,
+    output reg [6:0] crc
+);
+
+reg g0;
+
+  always @(posedge clk) begin
+    if (rst) begin
+        crc <= 7'b0000000;
+    end
+    else begin
+   // integer i;
+      for (int i = 0; i < 8; i++) begin
+          g0 = data[7-i] ^ crc[6];
+            crc[6] = crc[5];
+            crc[5] = crc[4];
+            crc[4] = crc[3];
+            crc[3] = crc[2] ^ g0;
+            crc[2] = crc[1];
+            crc[1] = crc[0];
+            crc[0] = g0;
+            
+        end
+    end
+end
+
+endmodule
