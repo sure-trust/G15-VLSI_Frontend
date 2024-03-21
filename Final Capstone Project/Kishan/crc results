@@ -1,18 +1,199 @@
- --------------------------------------
+--------------------------------------
 # Name    Type               Size  Value
 # --------------------------------------
 # req     mem_sequence_item  -     @617 
-#   data  integral           8     'hca 
-#   crc   integral           7     'h0  
-#   clk   integral           1     'h0  
-#   rst   integral           1     'h0  
+#   data  integral           8     'h18 
+#   crc   integral           7     'h51 
 # --------------------------------------
 # --------------------------------------
 # Name    Type               Size  Value
 # --------------------------------------
 # req1    mem_sequence_item  -     @589 
-#   data  integral           8     'hca 
-#   crc   integral           7     'h7f 
-#   clk   integral           1     'h0  
-#   rst   integral           1     'h0  
+#   data  integral           8     'h18 
+#   crc   integral           7     'h51 
 # --------------------------------------
+# outputs are matched
+# --------------------------------------
+# Name    Type               Size  Value
+# --------------------------------------
+# req     mem_sequence_item  -     @617 
+#   data  integral           8     'hfd 
+#   crc   integral           7     'h6b 
+# --------------------------------------
+# --------------------------------------
+# Name    Type               Size  Value
+# --------------------------------------
+# req1    mem_sequence_item  -     @589 
+#   data  integral           8     'hfd 
+#   crc   integral           7     'h6b 
+# --------------------------------------
+# outputs are matched
+# --------------------------------------
+# Name    Type               Size  Value
+# --------------------------------------
+# req     mem_sequence_item  -     @617 
+#   data  integral           8     'hbb 
+#   crc   integral           7     'h39 
+# --------------------------------------
+# --------------------------------------
+# Name    Type               Size  Value
+# --------------------------------------
+# req1    mem_sequence_item  -     @589 
+#   data  integral           8     'hbb 
+#   crc   integral           7     'h39 
+# --------------------------------------
+# outputs are matched
+# --------------------------------------
+# Name    Type               Size  Value
+# --------------------------------------
+# req     mem_sequence_item  -     @617 
+#   data  integral           8     'h8f 
+#   crc   integral           7     'h36 
+# --------------------------------------
+# --------------------------------------
+# Name    Type               Size  Value
+# --------------------------------------
+# req1    mem_sequence_item  -     @589 
+#   data  integral           8     'h8f 
+#   crc   integral           7     'h36 
+# --------------------------------------
+# outputs are matched
+# --------------------------------------
+# Name    Type               Size  Value
+# --------------------------------------
+# req     mem_sequence_item  -     @617 
+#   data  integral           8     'hbb 
+#   crc   integral           7     'h39 
+# --------------------------------------
+# --------------------------------------
+# Name    Type               Size  Value
+# --------------------------------------
+# req1    mem_sequence_item  -     @589 
+#   data  integral           8     'hbb 
+#   crc   integral           7     'h39 
+# --------------------------------------
+# outputs are matched
+# --------------------------------------
+# Name    Type               Size  Value
+# --------------------------------------
+# req     mem_sequence_item  -     @617 
+#   data  integral           8     'h44 
+#   crc   integral           7     'h40 
+# --------------------------------------
+# --------------------------------------
+# Name    Type               Size  Value
+# --------------------------------------
+# req1    mem_sequence_item  -     @589 
+#   data  integral           8     'h44 
+#   crc   integral           7     'h40 
+# --------------------------------------
+# outputs are matched
+# --------------------------------------
+# Name    Type               Size  Value
+# --------------------------------------
+# req     mem_sequence_item  -     @617 
+#   data  integral           8     'h99 
+#   crc   integral           7     'h19 
+# --------------------------------------
+# --------------------------------------
+# Name    Type               Size  Value
+# --------------------------------------
+# req1    mem_sequence_item  -     @589 
+#   data  integral           8     'h99 
+#   crc   integral           7     'h19 
+# --------------------------------------
+# outputs are matched
+# --------------------------------------
+# Name    Type               Size  Value
+# --------------------------------------
+# req     mem_sequence_item  -     @617 
+#   data  integral           8     'h8f 
+#   crc   integral           7     'h36 
+# --------------------------------------
+# --------------------------------------
+# Name    Type               Size  Value
+# --------------------------------------
+# req1    mem_sequence_item  -     @589 
+#   data  integral           8     'h8f 
+#   crc   integral           7     'h36 
+# --------------------------------------
+# outputs are matched
+# --------------------------------------
+# Name    Type               Size  Value
+# --------------------------------------
+# req     mem_sequence_item  -     @617 
+#   data  integral           8     'h4e 
+#   crc   integral           7     'h1a 
+# --------------------------------------
+# --------------------------------------
+# Name    Type               Size  Value
+# --------------------------------------
+# req1    mem_sequence_item  -     @589 
+#   data  integral           8     'h4e 
+#   crc   integral           7     'h1a 
+# --------------------------------------
+# outputs are matched
+# --------------------------------------
+# Name    Type               Size  Value
+# --------------------------------------
+# req     mem_sequence_item  -     @617 
+#   data  integral           8     'hdd 
+#   crc   integral           7     'h59 
+# --------------------------------------
+# --------------------------------------
+# Name    Type               Size  Value
+# --------------------------------------
+# req1    mem_sequence_item  -     @589 
+#   data  integral           8     'hdd 
+#   crc   integral           7     'h59 
+# --------------------------------------
+# outputs are matched
+# --------------------------------------
+# Name    Type               Size  Value
+# --------------------------------------
+# req     mem_sequence_item  -     @617 
+#   data  integral           8     'h91 
+#   crc   integral           7     'h51 
+# --------------------------------------
+# --------------------------------------
+# Name    Type               Size  Value
+# --------------------------------------
+# req1    mem_sequence_item  -     @589 
+#   data  integral           8     'h91 
+#   crc   integral           7     'h51 
+# --------------------------------------
+# outputs are matched
+# --------------------------------------
+# Name    Type               Size  Value
+# --------------------------------------
+# req     mem_sequence_item  -     @617 
+#   data  integral           8     'h11 
+#   crc   integral           7     'h10 
+# --------------------------------------
+# --------------------------------------
+# Name    Type               Size  Value
+# --------------------------------------
+# req1    mem_sequence_item  -     @589 
+#   data  integral           8     'h11 
+#   crc   integral           7     'h10 
+# --------------------------------------
+# outputs are matched
+# --------------------------------------
+# Name    Type               Size  Value
+# --------------------------------------
+# req     mem_sequence_item  -     @617 
+#   data  integral           8     'hba 
+#   crc   integral           7     'h30 
+# --------------------------------------
+# --------------------------------------
+# Name    Type               Size  Value
+# --------------------------------------
+# req1    mem_sequence_item  -     @589 
+#   data  integral           8     'hba 
+#   crc   integral           7     'h30 
+# --------------------------------------
+# outputs are matched
+# UVM_INFO test.sv(23) @ 480: uvm_test_top [id] ---------------TEST----------------
+# UVM_INFO verilog_src/uvm-1.2/src/base/uvm_objection.svh(1270) @ 480: reporter [TEST_DONE] 'run' phase is ready to proceed to the 'extract' phase
+# UVM_INFO verilog_src/uvm-1.2/src/base/uvm_report_server.svh(847) @ 480: reporter [UVM/REPORT/SERVER] 
+# --- UVM Report Summary ---
