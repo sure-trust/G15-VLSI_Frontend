@@ -23,6 +23,6 @@ Below is a table summarizing the mini projects and final project completed durin
 
 | Description                               | Link                                    |
 |-------------------------------------------|-----------------------------------------|
-| Mini Projects: Verilog based digital filter using hancarslon adder,Verfication of SIPO using SV|[click here](https://github.com/Chepurisrija/G15-VLSI_Frontend/tree/main/Mini%20Projects/Srija)                         |
+| Mini Projects: Verilog based digital filter using hancarslon adder,Verfication of SIPO using SV|[click here](https://github.com/sure-trust/G15-VLSI_Frontend/tree/main/Mini%20Projects/Srija)                         |
 
-| Final Project: Verilog based ALU using Modified booth multiplier     | [click here](https://github.com/Chepurisrija/G15-VLSI_Frontend/tree/main/Final%20Capstone%20Project/Srija)                         |
+| Final Project: Verilog based ALU using Modified booth multiplier     | [click here](https://github.com/sure-trust/G15-VLSI_Frontend/tree/main/Final%20Capstone%20Project/Srija)                         |
