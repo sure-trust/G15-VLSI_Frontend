@@ -23,5 +23,5 @@ Below is a table summarizing the mini projects and final project completed durin
 
 | Description                               | Link                                    |
 |-------------------------------------------|-----------------------------------------|
-| Mini Projects:Design of control system of automatic Wasing Machine using Verilog ,design and verification of USR using System Verilog    | [click here]  (https://github.com/sure-trust/G15-VLSI_Frontend/tree/main/Mini%20Projects/DibyaJyothi)                       |
-| Final Project: Design and Verification of Wishbone Protocol    | [click here] (https://github.com/sure-trust/G15-VLSI_Frontend/tree/main/Final%20Capstone%20Project/DibyaJyothi)                        |
+| Mini Projects:Design of control system of automatic Wasing Machine using Verilog ,design and verification of USR using System Verilog    | [click here](https://github.com/sure-trust/G15-VLSI_Frontend/tree/main/Mini%20Projects/DibyaJyothi)                       |
+| Final Project: Design and Verification of Wishbone Protocol    | [click here](https://github.com/sure-trust/G15-VLSI_Frontend/tree/main/Final%20Capstone%20Project/DibyaJyothi)                        |
