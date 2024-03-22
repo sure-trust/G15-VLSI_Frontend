@@ -25,4 +25,4 @@ Below is a table summarizing the 4_STAGE ELEVATOR AND DUAL PORT RAM  and SPI_MAS
 |-------------------------------------------|-----------------------------------------|
 | Mini Projects: 4_STAGE ELEVATOR | [click here](https://github.com/venkatvatturi/G15-VLSI_Frontend/tree/main/Mini%20Projects/Venkat%20Vatturi/4_stage_elevator_controller(miniproject))                        | 
 | Mini Projects: DUAL PORT RAM    | [click here](https://github.com/venkatvatturi/G15-VLSI_Frontend/tree/main/Mini%20Projects/Venkat%20Vatturi/Dual_port_ram(mini_project))                         |                        |
-| Final Project: [SPI_MASTER_PROTOCAL]  | [click here](https://github.com/venkatvatturi/G15-VLSI_Frontend/tree/main/Final%20Capstone%20Project/Venkat%20Vatturi/spi_master_major_project)                         |
+| Final Project: SPI_MASTER_PROTOCAL | [click here](https://github.com/venkatvatturi/G15-VLSI_Frontend/tree/main/Final%20Capstone%20Project/Venkat%20Vatturi)                         |
