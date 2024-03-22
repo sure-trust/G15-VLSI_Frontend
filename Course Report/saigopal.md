@@ -24,5 +24,5 @@ Below is a table summarizing the mini projects and final project completed durin
 | Description                                       | Link                                    |
 |---------------------------------------------------|-----------------------------------------|
 | Mini Projects: 1.voting machine using verilog     | [click here](https://github.com/sure-trust/G15-VLSI_Frontend/tree/main/Mini%20Projects/Sai%20Gopal/miniproject%20by%20gopal)  |                          
-                 2.verification of ALU using SV     | [click here](https://github.com/sure-trust/G15-VLSI_Frontend/tree/main/Mini%20Projects/Sai%20Gopal/SV_Mini%20project)         |
+|Mini Project:2.verification of ALU using SV     | [click here](https://github.com/sure-trust/G15-VLSI_Frontend/tree/main/Mini%20Projects/Sai%20Gopal/SV_Mini%20project)         |
 | Final Project: design of 16 bit RISC processor    | [click here](https://github.com/sure-trust/G15-VLSI_Frontend/tree/main/Final%20Capstone%20Project/Sai%20Gopal/MAJOR%20PROJECT)|                         
