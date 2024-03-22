@@ -6,23 +6,22 @@
 
 
 <h3 align="center">SURE Trust - Skill Upgradation for Rural-youth Empowerment Trust</h3>
-  <h2>VLSI Frontend</h2>
+  <h2>VLSI FRONTEND</h2>
 </div>
 
 # Course Report
 
 ## Name: Nidhish Shetty
 
-## Qualifications: pursuing 4th year BE
+## Qualifications: Bachelor of Engineering
 
-Welcome to the course report for the [Course Name]! This README document provides an overview of the course, its mini projects and final project.
+Welcome to the course report for the VLSI FRONTEND! This README document provides an overview of the course, its mini projects and final project.
 
 ### Mini Projects and Final Project
 
 Below is a table summarizing the mini projects and final project completed during the course:
 
-| Description                                       | Link                                    |
-|---------------------------------------------------|-----------------------------------------|
-| Mini Projects: 1.Assynchronous fifo  using verilog| [click here](https://github.com/Nidhish-Shetty/G15-VLSI_Frontend/tree/main/Mini%20Projects/Nidhish/Miniproject2) |
-                 2.memory model using sv            | [click here](https://github.com/Nidhish-Shetty/G15-VLSI_Frontend/blob/main/Mini%20Projects/Nidhish/afifo_cdc.xpr)|
-| Final Project: [Project Description]              | [click here](https://github.com/Nidhish-Shetty/G15-VLSI_Frontend/tree/main/Final%20Capstone%20Project/Nidhish)   |
+| Description                               | Link                                    |
+|-------------------------------------------|-----------------------------------------|
+| Mini Projects: 1. Design of Assynchronous FIFO using verilog 2.Design and Verification of Memory model using System Verilog  | [1.Click Here ](https://github.com/Nidhish-Shetty/G15-VLSI_Frontend/blob/main/Mini%20Projects/Nidhish/afifo_cdc.xpr)  [2.Click Here](https://github.com/Nidhish-Shetty/G15-VLSI_Frontend/tree/main/Mini%20Projects/Nidhish/Miniproject2)                        |
+| Final Project: [Design of SPI protocol using Verilog]     | [Click Here](https://github.com/Nidhish-Shetty/G15-VLSI_Frontend/blob/main/Mini%20Projects/Nidhish/afifo_cdc.xpr)                         |
