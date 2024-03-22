@@ -11,11 +11,11 @@
 
 # Course Report
 
-## Name: [VATTURI DAYANANDA SATYA VENKAT]
+## Name: VATTURI DAYANANDA SATYA VENKAT
 
-## Qualifications: [PERSUING 4TH YEAR  B.TECH]
+## Qualifications: PERSUING 4TH YEAR  B.TECH
 
-Welcome to the course report for the [VLSI_FRONTEND]! This README document provides an overview of the course, its mini projects and final project.
+Welcome to the course report for the VLSI_FRONTEND! This README document provides an overview of the course, its mini projects and final project.
 
 ### Mini Projects and Final Project
 
