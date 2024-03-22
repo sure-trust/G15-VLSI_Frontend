@@ -1,3 +1,4 @@
+
 <!-- PROJECT LOGO -->
 <br />
 
@@ -13,7 +14,7 @@
 
 ## Name: Nidhish Shetty
 
-## Qualifications: Bachelor of Engineering
+## Qualifications: pursuing 4th year Bachelor of Engineering
 
 Welcome to the course report for the VLSI FRONTEND! This README document provides an overview of the course, its mini projects and final project.
 
@@ -23,5 +24,5 @@ Below is a table summarizing the mini projects and final project completed durin
 
 | Description                               | Link                                    |
 |-------------------------------------------|-----------------------------------------|
-| Mini Projects: 1. Design of Assynchronous FIFO using verilog 2.Design and Verification of Memory model using System Verilog  | [1.Click Here ](https://github.com/Nidhish-Shetty/G15-VLSI_Frontend/blob/main/Mini%20Projects/Nidhish/afifo_cdc.xpr)  [2.Click Here](https://github.com/Nidhish-Shetty/G15-VLSI_Frontend/tree/main/Mini%20Projects/Nidhish/Miniproject2)                        |
-| Final Project: [Design of SPI protocol using Verilog]     | [Click Here](https://github.com/Nidhish-Shetty/G15-VLSI_Frontend/blob/main/Mini%20Projects/Nidhish/afifo_cdc.xpr)                         |
+| Mini Projects: 1. Design of Assynchronous FIFO using Verilog 2.Design and Verification of Memory model using System Verilog | [1.Click Here for Verilog Project](https://github.com/sure-trust/G15-VLSI_Frontend/blob/main/Mini%20Projects/Nidhish/afifo_cdc.xpr)  [2.Click Here for SV Project](https://github.com/sure-trust/G15-VLSI_Frontend/tree/main/Mini%20Projects/Nidhish/Miniproject2)                        |
+| Final Project: [Design of SPI communication protocol using verilog]     | [Click Here](https://github.com/sure-trust/G15-VLSI_Frontend/tree/main/Final%20Capstone%20Project/Nidhish)                         |
