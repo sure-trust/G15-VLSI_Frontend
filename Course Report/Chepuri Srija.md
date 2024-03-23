@@ -24,5 +24,4 @@ Below is a table summarizing the mini projects and final project completed durin
 | Description                               | Link                                    |
 |-------------------------------------------|-----------------------------------------|
 | Mini Projects: Implementation of optimized digital filter using Han Carslon adder,DESIGN AND VERIFICATION OF 8-BIT SERIAL IN PARALLEL OUT SHIFT REGISTER|[click here](https://github.com/sure-trust/G15-VLSI_Frontend/tree/main/Mini%20Projects/Srija)                         |
-
 | Final Project: IMPLEMENTATION OF AREA AND SPEED EFFICIENT ALU USING 32-BIT MODIFIED BOOTH MULTIPLIER| [click here](https://github.com/sure-trust/G15-VLSI_Frontend/tree/main/Final%20Capstone%20Project/Srija)                         |
