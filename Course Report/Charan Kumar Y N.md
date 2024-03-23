@@ -23,5 +23,5 @@ Below is a table summarizing the mini projects and final project completed durin
 
 | Description                               | Link                                    |
 |-------------------------------------------|-----------------------------------------|
-| Mini Projects: CAN Transmitting Module using Verilog , Asynchronous FIFO using System Verilog | [Click here](https://github.com/Charan123511/G15-VLSI_Frontend/tree/main/Mini%20Projects/Charan) , [Click here](https://github.com/sure-trust/G15-VLSI_Frontend/tree/main/Mini%20Projects/Charan/System%20Verilog%20Mini%20project)                        |
+| Mini Projects: CAN Transmitting Module using Verilog , Asynchronous FIFO using System Verilog | [Click here](https://github.com/sure-trust/G15-VLSI_Frontend/tree/main/Mini%20Projects/Charan)                      |
 | Final Project: I2C Protocol verification using UVM     | [Click here](https://github.com/sure-trust/G15-VLSI_Frontend/tree/main/Final%20Capstone%20Project/Charan/Major%20Project%20UVM)                         |
